@@ -1,0 +1,28 @@
+.home {
+    grid-area: content;
+    /* background-color: rgb(1, 161, 182); */
+}
+
+.home-main {
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+    height: 87%;
+}
+
+.home-lux {
+    width: 797px;
+    position: absolute;
+    right: 270px; 
+    bottom: 70px;
+    z-index: 1;
+}
+
+.home-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.home-right img {
+    min-width: 61vw;
+}

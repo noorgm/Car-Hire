@@ -6,3 +6,8 @@
 *::after, *::before {
     box-sizing: border-box;
 }
+
+body {
+    background-image: url('./Assets/images/background.png');
+    background-size: cover;
+}

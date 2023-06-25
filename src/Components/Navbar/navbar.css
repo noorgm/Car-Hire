@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: space-between;
     /* padding: 11px; */
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    z-index: 1000;
 }
 
 
