@@ -1,0 +1,28 @@
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 11px; */
+    background-color: aquamarine;
+}
+
+
+.nav-ul {
+    display: grid;
+    grid-template-columns: 4fr auto;
+    column-gap: 11px;
+    align-items: center;
+    padding: 11px;
+}
+.nav-ul a {
+    text-decoration: none;
+}
+.ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 17px;
+}
+.signin button {
+    padding: 8px 15px;
+}

@@ -1,0 +1,19 @@
+.app {
+    display: grid;  
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    'navbar'
+    'content'
+    'footer';
+    min-height: 100vh;
+}
+
+.home {
+    grid-area: content;
+    background-color: rgb(1, 161, 182);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(13, 192, 117);    
+}
