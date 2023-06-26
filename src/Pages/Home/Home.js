@@ -1,8 +1,7 @@
 import React from 'react';
 
 import StarIcon from '@mui/icons-material/Star';
-import hero from '../../Assets/images/background3.svg';
-import lux from '../../Assets/images/car/Luxury/jaguar.png';
+import hero from '../../Assets/images/page-hero.svg';
 import Form from '../../Components/Form/Form';
 import './home.css';
 
@@ -21,13 +20,12 @@ const Home = () => {
             <button>Book Trip</button>
             <p>+537 Reviews <br /><span><StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon /> </span></p>
           </div>
-          <img className='home-lux' src={lux} alt="lux" />
         </div>
+        <Form />
+      </div>
         <div className="home-right">
           <img src={hero} alt="hero" />
         </div>
-      </div>
-      <Form />
     </section>
   )
 }
