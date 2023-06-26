@@ -17,6 +17,7 @@
     --r-secondary-text: rgba(63, 61, 86, 1);
     --r-darkblue: rgba(86, 79, 203, 1);
     --r-pink: rgba(255, 101, 132, 1);
+    --pinky: rgba(255, 101, 132, 0.4);
     --r-primary-text: rgba(47, 46, 65, 1);
 } 
 * {

@@ -1,52 +1,37 @@
-.container {
-    /* background-color: bisque; */
-    max-width: 80%;
-    margin: 0 auto;
-}
-
 .personal-form {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 .complete-it {
-    background: var(--third);
+    background: var(--pink);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    color: var(--seventh);
-}
-.close {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    font-size: 23px;
-    color: var(--seventh);
-}
-.close:hover {
-    color: orangered;
+    color: var(--bg-white);
+    word-spacing: 9px;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
 }
 .voucher-bg {
-
-background-color: rgba(6, 173, 165, 0.25);
-    min-height: 120px;
+    background-color: rgba(255, 101, 132, 0.3);
+    padding: 11px;
     margin-bottom: 23px;
 }
 .personal-voucher {
-    padding-top: 17px;
+    padding: 17px;
 }
 .personal-voucher > h3, .choosen-vehicle > h3 {
-    font-size: 25px;
-    color: var(--first);
+    font-size: 1.5rem;
+    color: var(--secondary-text);
     margin: 10px 0px 7px 0px;
 }
 .personal-voucher > p {
-    font-size: 19px;
-    color: var(--first);
+    font-size: 1.1rem;
+    color: var(--secondary-text);
+    text-align: center;
+    font-weight: 500;
 }
 .car-details {
-    /* border-bottom: 3px solid orangered; */
     margin-bottom: 30px;
 }
 .choosen-vehicle {
@@ -60,7 +45,7 @@ background-color: rgba(6, 173, 165, 0.25);
     margin-top: 17px;
     text-transform: capitalize;
     margin-bottom: 10px;
-    color: rgba(58, 70, 93, 0.85);
+    color: var(--secondary-text);
 }
 .reserve-info > p {
     margin-bottom: 5px;
@@ -73,16 +58,13 @@ background-color: rgba(6, 173, 165, 0.25);
 
 /* FORM IT SELF */
 .filling-form {
-    /* background-color: cornsilk; */
     margin-bottom: 50px;
-    border-bottom: 3px solid var(--sixth);
-    color: var(--first);
+    color: var(--secondary-text);
 }
 .personal-container {
-    font-size: 23px;
+    font-size: 1.4rem;
     margin-bottom: 30px;
-    border-top: 3px solid var(--sixth);
-
+    border-top: 3px solid var(--highlight);
 }
 .personal-names, .personal-digit, .personal-live {
     display: grid;
@@ -95,28 +77,18 @@ background-color: rgba(6, 173, 165, 0.25);
     margin-top: 10px;
     border: none;
     outline: none;
-    background-color: rgba(150, 155, 174, 0.3);
+    background-color: var(--bg-white);
     font-size: 17px;
-    color: var(--first);
+    color: var(--secondary-text);
 } 
 .personal-names, .personal-digit, .personal-live, .personal-address, .personal-email {
     margin-top: 20px;
 }
 .star-sym {
-    color: orangered;
+    color: var(--pink);
 }
 
 .personal-btn {
     padding: 17px;
     width: 100%;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: orangered;
-    color: var(--seventh);
-    font-size: 27px;
-    opacity: 1;
-}
-.personal-btn:hover {
-    opacity: 0.9;
 }

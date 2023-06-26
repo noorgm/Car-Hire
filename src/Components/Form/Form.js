@@ -48,7 +48,7 @@ const Form = () => {
           <h1>Book a car</h1> <br />
 
           {/* Confirmation pop-up message */}
-          {confirmationMessage && <div style={{ textAlign: 'center', color: 'green', fontWeight: 'bold', fontSize: '27px' }}>{confirmationMessage}</div>}
+          {confirmationMessage && <div style={{ textAlign: 'center', color: 'var(--pinky)', fontWeight: 'bold', fontSize: '27px' }}>{confirmationMessage}</div>}
    
           {showError && <h1 className="required-message">* All fields are required to be provided!</h1>}
 

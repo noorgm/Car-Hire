@@ -15,9 +15,9 @@
 .home-left {
     color: var(--primary-text);
     font-size: 2.5rem;
-    max-width: 40%;
+    /* max-width: 40%; */
     margin-top: 9rem;
-    z-index: 1000;
+    z-index: 1;
 }
 .starts {
     color: var(--highlight);
@@ -30,24 +30,12 @@
 }
 .home-left-bottom {
     display: flex;
-    max-width: 67%;
-    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
     margin-top: 3.2rem;
 }
 .home-left-bottom > p {
     color: var(--pink);
-}
-@media (max-width: 968px) {
-    .home-lux {
-        max-width: 400px;
-        top: 37%;
-        right: -11%;
-    }
-}
-@media (max-width: 768px) {
-    .home-right, .home-lux {
-        display: none;
-    }
 }
 .home-right {
     position: absolute;
