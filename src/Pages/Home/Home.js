@@ -13,11 +13,11 @@ const Home = () => {
 
         <div className="home-left">
           <h4>Electric Cars Available</h4>
-          <h1>Your Road Trip Starts Here</h1>
+          <h1>Your Road Trip <span className='starts'>Starts</span> Here</h1>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea.</p>
           <p>Dolor sit amet consectetur adipisicing.</p>
           <div className="home-left-bottom">
-            <button>BOOK TRIP</button>
+            <button>Book Trip</button>
             <p>+537 Reviews <br /><span><StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon /> </span></p>
           </div>
           <img className='home-lux' src={lux} alt="lux" />

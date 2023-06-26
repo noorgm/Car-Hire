@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1;100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+        /* CSS HEX */
+    --highlight: #6C63FF;
+    --bg-white: #F1F1F1;
+    --silver: #C1C1C1;
+    --secondary-text: #3F3D56;
+    --darkblue: #564FCB;
+    --pink: #FF6584;
+    --primary-text: #2F2E41;
+
+        /* SCSS RGB */
+    --r-highlight: rgba(108, 99, 255, 1);
+    --r-bg-white: rgba(241, 241, 241, 1);
+    --r-silver: rgba(193, 193, 193, 1);
+    --r-secondary-text: rgba(63, 61, 86, 1);
+    --r-darkblue: rgba(86, 79, 203, 1);
+    --r-pink: rgba(255, 101, 132, 1);
+    --r-primary-text: rgba(47, 46, 65, 1);
+} 
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +28,12 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     background-image: url('./Assets/images/background.png');
     background-size: cover;
+    font-family: 'Ysabeau SC', sans-serif;
 }
