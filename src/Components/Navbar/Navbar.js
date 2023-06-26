@@ -12,14 +12,14 @@ const Navbar = () => {
       </Link>      
       <div className="nav-ul">
         <div className="ul">
-        <NavLink to='cars' style={({ isActive, isPending }) => { return { color: isActive ? '#0fa3b1' : '', fontWeight: isActive ? 'bolder' : '' }; }} >CARS</NavLink>
-        <NavLink to='team' style={({ isActive, isPending }) => { return { color: isActive ? '#0fa3b1' : '', fontWeight: isActive ? 'bolder' : '' };  }}>OUR TEAM</NavLink>
-        <NavLink to='contact' style={({ isActive, isPending }) => { return { color: isActive ? '#0fa3b1' : '', fontWeight: isActive ? 'bolder' : '' };  }}>CONTACT US</NavLink>
+          <NavLink className='one' to='cars' style={({ isActive, isPending }) => { return { color: isActive ? 'var(--highlight)' : '', fontWeight: isActive ? 'bolder' : '' }; }} >Cars</NavLink>
+          <NavLink className='two' to='team' style={({ isActive, isPending }) => { return { color: isActive ? 'var(--highlight)' : '', fontWeight: isActive ? 'bolder' : '' };  }}>Our Team</NavLink>
+          <NavLink className='three' to='contact' style={({ isActive, isPending }) => { return { color: isActive ? 'var(--highlight)' : '', fontWeight: isActive ? 'bolder' : '' };  }}>Contact Us</NavLink>
           
         </div>
         <div className="signin">
           <Link to='sign' style={{ textDecoration: 'none' }}>
-            <button>SIGN IN</button>
+            <button>Sign In</button>
           </Link>
         </div>
       </div>

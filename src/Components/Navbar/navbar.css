@@ -3,26 +3,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 11px; */
+    padding-top: 11px;
     /* background-color: aquamarine; */
     z-index: 1000;
 }
-
 
 .nav-ul {
     display: grid;
     grid-template-columns: 3fr auto;
     align-items: center;
-    padding: 11px;
+    font-size: 1.2rem;
 }
 .nav-ul a {
     text-decoration: none;
+    color: var(--secondary-text);
+    font-weight: 600;
+}
+.nav-ul a:hover {
+    color: var(--pink);
 }
 .ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 17px;
+    grid-template-columns: repeat(4, 1fr);  
+    column-gap: 7px;
 }
-.signin button {
-    padding: 8px 15px;
+.one {
+    text-align: center;
 }
