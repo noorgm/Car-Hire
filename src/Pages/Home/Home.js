@@ -3,6 +3,7 @@ import React from 'react';
 import StarIcon from '@mui/icons-material/Star';
 import hero from '../../Assets/images/background3.svg';
 import lux from '../../Assets/images/car/Luxury/jaguar.png';
+import Form from '../../Components/Form/Form';
 import './home.css';
 
 
@@ -26,6 +27,7 @@ const Home = () => {
           <img src={hero} alt="hero" />
         </div>
       </div>
+      <Form />
     </section>
   )
 }
