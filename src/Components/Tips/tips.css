@@ -3,7 +3,48 @@
     background-color: var(--bg-white);
 }
 
-
+.tips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 43px;
+    color: var(--primary-text);
+}
+.left-tips {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+}
 .left-tips img {
-    width: 30%;
+    max-width: 500px;
+    height: 80%;
+    border-radius: 21px;
+}
+.right-tips {
+    grid-column: 2 / 4;
+}
+.right-tips > h2 {
+    font-size: 2.5rem;
+    margin: 47px 0px 11px 21px;
+}
+.main-right-tip {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px;
+    padding: 13px;
+}
+.tip-box {
+    color: var(--secondary-text);
+    padding: 13px;
+}
+.tip-box > h3 {
+    font-size: 1.3rem;
+}
+.tip-box > p:first-of-type {
+    background-color: var(--pink);
+    color: var(--bg-white);
+    max-width: fit-content;
+    padding: 5px 13px 5px 13px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 20px;
 }
