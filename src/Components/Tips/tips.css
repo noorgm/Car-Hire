@@ -1,6 +1,7 @@
 .tips-bg {
     margin-top: 270px;
     background-color: var(--bg-white);
+    padding: 20px;
 }
 
 .tips {
@@ -15,8 +16,7 @@
     align-items: center;
 }
 .left-tips img {
-    max-width: 500px;
-    height: 80%;
+    width: 500px;
     border-radius: 21px;
 }
 .right-tips {
@@ -40,7 +40,7 @@
     font-size: 1.3rem;
 }
 .tip-box > p:first-of-type {
-    background-color: var(--pink);
+    background-color: var(--highlight);
     color: var(--bg-white);
     max-width: fit-content;
     padding: 5px 13px 5px 13px;

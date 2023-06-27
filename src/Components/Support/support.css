@@ -1,0 +1,19 @@
+.support-bg {
+    background-color: var(--secondary-text);
+    min-height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 91px 0px 0px 0px;
+}
+.support-info {
+    color: var(--bg-white);
+    text-align: center;
+    font-size: 3rem;
+}
+.support-info > h1 {
+    margin-bottom: 0.8rem;
+}
+.support-info > p {
+    font-size: 1.4rem;
+}

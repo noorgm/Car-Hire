@@ -1,6 +1,6 @@
 import React from 'react';
 
-import tips from '../../Assets/images/tip3.jpg';
+import tips from '../../Assets/images/tip2.jpeg';
 import './tips.css';
 
 const Tips = () => {
