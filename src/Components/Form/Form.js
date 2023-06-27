@@ -45,7 +45,7 @@ const Form = () => {
   return (
     <section className="book-it container">
         <div className="home-form">
-          <h1>Book a car</h1> <br />
+          <h1 className='form-hone'>Book a car</h1> <br />
 
           {/* Confirmation pop-up message */}
           {confirmationMessage && <div style={{ textAlign: 'center', color: 'var(--pinky)', fontWeight: 'bold', fontSize: '27px' }}>{confirmationMessage}</div>}

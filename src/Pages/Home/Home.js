@@ -4,6 +4,7 @@ import StarIcon from '@mui/icons-material/Star';
 import hero from '../../Assets/images/page-hero.svg';
 import Form from '../../Components/Form/Form';
 import './home.css';
+import Tips from '../../Components/Tips/Tips';
 
 
 const Home = () => {
@@ -26,6 +27,8 @@ const Home = () => {
         <div className="home-right">
           <img src={hero} alt="hero" />
         </div>
+
+        <Tips />
     </section>
   )
 }

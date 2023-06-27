@@ -1,0 +1,9 @@
+.tips-bg {
+    margin-top: 270px;
+    background-color: var(--bg-white);
+}
+
+
+.left-tips img {
+    width: 30%;
+}

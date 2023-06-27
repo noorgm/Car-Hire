@@ -16,9 +16,14 @@
     width: 100%;
     padding: 43px;
 }
+.form-hone {
+    color: var(--secondary-text);
+    font-size: 2.1rem;
+}
 .main-form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    color: var(--secondary-text);
 }
 .input-input {
     min-width: 100%;
@@ -38,7 +43,7 @@
 .required-message {
     color: var(--pink);
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 1.3rem;
 }
 .form-input, .six {
     margin: 10px;

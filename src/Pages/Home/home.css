@@ -24,6 +24,7 @@
 }
 .home-left h4 {
     font-size: 0.8rem;
+    color: var(--pink);
 }
 .home-left p {
     font-size: 1.1rem;
