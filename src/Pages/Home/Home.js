@@ -3,10 +3,11 @@ import React from 'react';
 import StarIcon from '@mui/icons-material/Star';
 import hero from '../../Assets/images/page-hero.svg';
 import Form from '../../Components/Form/Form';
-import './home.css';
 import Tips from '../../Components/Tips/Tips';
 import Support from '../../Components/Support/Support';
 import WhyUs from '../../Components/WhyUs/WhyUs';
+import Review from '../../Components/Review/Review';
+import './home.css';
 
 
 const Home = () => {
@@ -33,6 +34,7 @@ const Home = () => {
         <Tips />
         <WhyUs />
         <Support />
+        <Review />
     </section>
   )
 }
