@@ -17,3 +17,10 @@
 .support-info > p {
     font-size: 1.4rem;
 }
+.support-info span {
+    color: var(--pink);
+    padding: 3px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+}

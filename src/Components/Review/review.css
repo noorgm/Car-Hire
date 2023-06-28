@@ -42,13 +42,19 @@
     bottom: 21px;
     color: var(--pink);
 }
-.rev-logo p {
+.rev-logo a {
+    /* background-color: saddlebrown; */
     position: absolute;
     bottom: 0px;
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--secondary-text);
+    text-decoration: none;
 } 
+.rev-logo a:hover {
+    color: var(--pink);
+    /* border-bottom: 1px dashed var(--pink);     */
+}
 .rev-logo > img {
     max-width: 130px;
     margin-bottom: 37px;
