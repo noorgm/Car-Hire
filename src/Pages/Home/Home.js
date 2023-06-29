@@ -8,6 +8,7 @@ import Support from '../../Components/Support/Support';
 import WhyUs from '../../Components/WhyUs/WhyUs';
 import Review from '../../Components/Review/Review';
 import './home.css';
+import Faq from '../../Components/FAQ/Faq';
 
 
 const Home = () => {
@@ -35,6 +36,7 @@ const Home = () => {
         <WhyUs />
         <Support />
         <Review />
+        <Faq />
     </section>
   )
 }

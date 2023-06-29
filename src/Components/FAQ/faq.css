@@ -1,0 +1,10 @@
+.faq-bg {
+    background-color: var(--bg-white);
+}
+
+
+.faq-top {    
+    margin-top: 5rem;
+    text-align: center;
+    padding: 37px 0px;
+}
