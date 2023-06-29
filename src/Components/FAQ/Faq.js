@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './faq.css';
 
 import { styled } from '@mui/material/styles';
@@ -9,22 +9,21 @@ import MuiAccordionDetails from '@mui/material/AccordionDetails';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
-))(({ theme }) => ({
+))(({ theme}) => ({
   border: `1px solid ${theme.palette.divider}`,
   '&:not(:last-child)': {
     borderBottom: 0,
   },
   '&:before': {
     display: 'none',
-  },
+  },  
 }));
 
 const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
     expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
-    {...props}
-  />
-))(({ theme }) => ({
+    {...props}/> 
+  ))(({ theme }) => ({ 
   flexDirection: 'row',
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
     transform: 'rotate(90deg)',
@@ -43,23 +42,24 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 const Faq = () => {
 
-    const [expanded, setExpanded] = React.useState('panel1');
+    const [expanded, setExpanded] = useState('panel1');
 
     const handleChange = (panel) => (event, newExpanded) => {
       setExpanded(newExpanded ? panel : false);
     };
 
+
   return (
     <section className="faq-bg">
-        <div className="container">
+        <div className="faq-container">
         <div className="faq-top">
             <h3>FAQ</h3>
             <h2>Frequently Asked Questions</h2>
             <p>Questions that asked by most of the customers and we have answerd below so it can help you with booking process faster.</p>
         </div>
         <div className="faq-bottom">
-        <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+        <Accordion  expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" sx={{ "& .MuiAccordionSummary-expandIconWrapper": {color: 'var(--secondary-text)'}, backgroundColor: expanded === 'panel1' ? 'var(--primary-text)' : '#fff', color: expanded === 'panel1' ? 'var(--bg-white)' : 'var(--secondary-text)' , fontSize: '1.1rem', letterSpacing: '1px' }} >
           <h4>What's included in the package when hiring a car?</h4>
         </AccordionSummary>
         <AccordionDetails sx={{ ml: 5 }}>
@@ -67,7 +67,7 @@ const Faq = () => {
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header" sx={{ "& .MuiAccordionSummary-expandIconWrapper": {color: 'var(--secondary-text)'}, backgroundColor: expanded === 'panel2' ? 'var(--primary-text)' : '#fff', color: expanded === 'panel2' ? 'var(--bg-white)' : 'var(--secondary-text)' , fontSize: '1.1rem', letterSpacing: '1px' }} >
           <h4>Will it be cheaper if I become a car?</h4>
         </AccordionSummary>
         <AccordionDetails sx={{ ml: 5 }}>
@@ -75,7 +75,7 @@ const Faq = () => {
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header" sx={{ "& .MuiAccordionSummary-expandIconWrapper": {color: 'var(--secondary-text)'}, backgroundColor: expanded === 'panel3' ? 'var(--primary-text)' : '#fff', color: expanded === 'panel3' ? 'var(--bg-white)' : 'var(--secondary-text)' , fontSize: '1.1rem', letterSpacing: '1px' }} >
           <h4>Can I pick up from Leeds Branch and drop it at York Branch?</h4>
         </AccordionSummary>
         <AccordionDetails sx={{ ml: 5 }}>
@@ -83,7 +83,7 @@ const Faq = () => {
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-        <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
+        <AccordionSummary aria-controls="panel4d-content" id="panel4d-header" sx={{ "& .MuiAccordionSummary-expandIconWrapper": {color: 'var(--secondary-text)'}, backgroundColor: expanded === 'panel4' ? 'var(--primary-text)' : '#fff', color: expanded === 'panel4' ? 'var(--bg-white)' : 'var(--secondary-text)' , fontSize: '1.1rem', letterSpacing: '1px' }} >
           <h4>I want car to be delivered by me, whow long will that take?</h4>
         </AccordionSummary>
         <AccordionDetails sx={{ ml: 5 }}>

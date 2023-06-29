@@ -1,10 +1,28 @@
 .faq-bg {
     background-color: var(--bg-white);
 }
+.faq-container {
+    max-width: 45vw;
+    margin: auto;
+}
 
-
-.faq-top {    
-    margin-top: 5rem;
+.faq-top {
     text-align: center;
     padding: 37px 0px;
+    color: var(--primary-text);
+    font-weight: 800;
+}
+.faq-top h3 {
+    font-size: 1.7rem;
+}
+.faq-top h2 {
+    font-size: 2.5rem;
+}
+.faq-top p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.faq-bottom {
+    line-height: 1.5;
 }
