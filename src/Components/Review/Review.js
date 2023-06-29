@@ -6,6 +6,8 @@ import google from '../../Assets/images/google.png';
 import trust from '../../Assets/images/trustpilot.png';
 import StarIcon from '@mui/icons-material/Star';
 import faces from '../../Assets/Data/faces';
+import left from '../../Assets/images/left-quote.png';
+import right from '../../Assets/images/right-quote.png';
 
 import './review.css';
 
@@ -51,7 +53,9 @@ const Review = () => {
                                 {
                                     review.map(face => (
                                         <div key={face.id} className="review-box" >
-                                            <p className='face-commment'>{face.comment}</p>
+                                            <img src={left} alt="left-quote" />
+                                            <span className='face-commment'>{face.comment}</span>
+                                            <img src={right} alt="right-quote" />
                                             <div className="review-bottom">
                                                 <img src={face.img} alt="faces" />
                                                 <div className="rev-bottom-bottom">
