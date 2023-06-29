@@ -1,4 +1,14 @@
-
+/* CHANGING THE DEFAULT BUTTON'S VALUE */
+.review-bg button {
+    width: auto;
+    padding: none;
+    border-radius: none;
+    box-shadow: none;
+}
+.review-bg button:hover {
+    box-shadow: none;
+    transition: none;
+}
 
 /* TOP PART */
 .top-review {
@@ -17,7 +27,6 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     column-gap: 31px;
-    /* background-color: aqua; */
     width: 100%;
     position: relative;
 }
@@ -43,7 +52,6 @@
     color: var(--pink);
 }
 .rev-logo a {
-    /* background-color: saddlebrown; */
     position: absolute;
     bottom: 0px;
     font-size: 1.1rem;
@@ -53,7 +61,6 @@
 } 
 .rev-logo a:hover {
     color: var(--pink);
-    /* border-bottom: 1px dashed var(--pink);     */
 }
 .rev-logo > img {
     max-width: 130px;
@@ -61,3 +68,60 @@
 }
 
 /* BOTTOM PART */
+.review-bottom-bg {
+    margin-top: 3rem;
+    background-color: var(--bg-white);
+}
+ 
+.review-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 37px;
+    text-align: left;
+    line-height: 1.5;
+    gap: 57px;
+}
+
+.review-box {
+    flex-basis: calc(31.33% - 160px);
+    height: 330px;
+    padding: 37px 27px;
+    position: relative;
+}
+
+.review-box:nth-of-type(odd) {
+    background-color: var(--silver);
+}
+.review-box:nth-of-type(even) {
+    background-color: burlywood;
+}
+
+.review-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 13px;
+}
+
+
+/* CAROUSEL LIBARY CLASSES */
+.carousel.carousel-slider .control-arrow {
+    background-color: var(--highlight);
+    opacity: 1;
+    color: cadetblue;
+    max-height: 20%;
+    transform: translate(-1%, 220%);
+}
+.carousel.carousel-slider .control-arrow:hover {
+    background-color: var(--secondary-text);
+}
+
+.review-bottom > img {
+    max-width: 70px;
+} 
+.face-commment {
+    font-style: italic;
+    font-weight: 600;
+}

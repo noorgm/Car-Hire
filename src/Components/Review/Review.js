@@ -1,22 +1,22 @@
 import React from 'react';
-
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import glass from '../../Assets/images/glassdoor.png';
 import google from '../../Assets/images/google.png';
 import trust from '../../Assets/images/trustpilot.png';
 import StarIcon from '@mui/icons-material/Star';
 import faces from '../../Assets/Data/faces';
 
-import megan from '../../Assets/faces/face5.svg';
-import janna from '../../Assets/faces/face.svg';
-import young from '../../Assets/faces/face3.svg';
-import abdi from '../../Assets/faces/face2.svg';
-import homed from '../../Assets/faces/face7.svg';
-
 import './review.css';
 
 const Review = () => {
 
-    
+    const displayAtTime = 3;
+    const reviewDAT = [];
+    for (let i = 0; i < faces.length; i += displayAtTime) {
+        reviewDAT.push(faces.slice(i, i + displayAtTime));        
+    }
+
   return (
     <section className="review-bg">
         <div className="review container">
@@ -40,89 +40,35 @@ const Review = () => {
                     </div>
                 </div>
             </div>
+        
+        </div>
 
-
-            <div className="bottom-review">
-
-
-                <div className="review-box">
-                    <div className="container">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae soluta, placeat illum ullam labore impedit autem nulla dolor, sunt animi laborum tempore cupiditate molestias dolorum facilis ipsa quisquam optio a. Facilis.</p>
-                        <div className="rev-box-bottom">
-                            <img src={megan} alt="megan" />
-                            <div className="rev-box-b-right">
-                                <p>First Surname</p>
-                                <p>City</p>
+            <Carousel showThumbs={false} showStatus={false} showArrows={true}>
+                {
+                    reviewDAT.map((review) => (
+                        <div className="review-bottom-bg">
+                            <div className="review-main">
+                                {
+                                    review.map(face => (
+                                        <div key={face.id} className="review-box" >
+                                            <p className='face-commment'>{face.comment}</p>
+                                            <div className="review-bottom">
+                                                <img src={face.img} alt="faces" />
+                                                <div className="rev-bottom-bottom">
+                                                    <h3>{face.name} {face.surName}</h3>
+                                                    <p>{face.city}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
                             </div>
                         </div>
-                    </div>
-                </div>
-                
-
-            </div>
-        </div>
+                    ))
+                }
+            </Carousel>
     </section>
   )
 }
 
 export default Review;
-
-
-
-
-
-
-
-
-
-
-
-
-                    // <div className="review-box">
-                    //     <div className="container">
-                    //         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae soluta, placeat illum ullam labore impedit autem nulla dolor, sunt animi laborum tempore cupiditate molestias dolorum facilis ipsa quisquam optio a. Facilis.</p>
-                    //         <div className="rev-box-bottom">
-                    //             <img src={abdi} alt="abdi" />
-                    //             <div className="rev-box-b-right">
-                    //                 <p>First Surname</p>
-                    //                 <p>City</p>
-                    //             </div>
-                    //         </div>
-                    //     </div>
-                    // </div>
-                    // <div className="review-box">
-                    //     <div className="container">
-                    //         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae soluta, placeat illum ullam labore impedit autem nulla dolor, sunt animi laborum tempore cupiditate molestias dolorum facilis ipsa quisquam optio a. Facilis.</p>
-                    //         <div className="rev-box-bottom">
-                    //             <img src={janna} alt="janna" />
-                    //             <div className="rev-box-b-right">
-                    //                 <p>First Surname</p>
-                    //                 <p>City</p>
-                    //             </div>
-                    //         </div>
-                    //     </div>
-                    // </div>
-                    // <div className="review-box">
-                    //     <div className="container">
-                    //         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae soluta, placeat illum ullam labore impedit autem nulla dolor, sunt animi laborum tempore cupiditate molestias dolorum facilis ipsa quisquam optio a. Facilis.</p>
-                    //         <div className="rev-box-bottom">
-                    //             <img src={homed} alt="homed" />
-                    //             <div className="rev-box-b-right">
-                    //                 <p>First Surname</p>
-                    //                 <p>City</p>
-                    //             </div>
-                    //         </div>
-                    //     </div>
-                    // </div>
-                    // <div className="review-box">
-                    //     <div className="container">
-                    //         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae soluta, placeat illum ullam labore impedit autem nulla dolor, sunt animi laborum tempore cupiditate molestias dolorum facilis ipsa quisquam optio a. Facilis.</p>
-                    //         <div className="rev-box-bottom">
-                    //             <img src={young} alt="young" />
-                    //             <div className="rev-box-b-right">
-                    //                 <p>First Surname</p>
-                    //                 <p>City</p>
-                    //             </div>
-                    //         </div>
-                    //     </div>
-                    // </div>
