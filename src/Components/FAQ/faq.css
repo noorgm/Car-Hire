@@ -1,5 +1,8 @@
 .faq-bg {
     background-color: var(--bg-white);
+    min-height: 700px;
+    overflow-x: hidden;
+    position: relative;
 }
 .faq-container {
     max-width: 45vw;
@@ -11,6 +14,8 @@
     padding: 37px 0px;
     color: var(--primary-text);
     font-weight: 800;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
 }
 .faq-top h3 {
     font-size: 1.7rem;
@@ -25,4 +30,12 @@
 
 .faq-bottom {
     line-height: 1.5;
+}
+
+/* The Image */
+.side-car {
+    max-width: 590px;
+    position: absolute;
+    right: -111px;
+    top: 297px;
 }

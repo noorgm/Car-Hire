@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from '../../Assets/images/logo1.png';
+import logo from '../../Assets/images/logoo.svg';
 import './navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 

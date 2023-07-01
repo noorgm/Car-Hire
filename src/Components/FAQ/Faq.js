@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './faq.css';
 
 import { styled } from '@mui/material/styles';
+import sideCar from '../../Assets/images/side-car1.png';
+
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
@@ -68,7 +70,7 @@ const Faq = () => {
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header" sx={{ "& .MuiAccordionSummary-expandIconWrapper": {color: 'var(--secondary-text)'}, backgroundColor: expanded === 'panel2' ? 'var(--primary-text)' : '#fff', color: expanded === 'panel2' ? 'var(--bg-white)' : 'var(--secondary-text)' , fontSize: '1.1rem', letterSpacing: '1px' }} >
-          <h4>Will it be cheaper if I become a car?</h4>
+          <h4>Will it be cheaper if I become a premium member?</h4>
         </AccordionSummary>
         <AccordionDetails sx={{ ml: 5 }}>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis similique aut porro provident molestias exercitationem reiciendis odio delectus sed atque cupiditate, sit adipisci quam voluptate quae aliquid accusamus soluta fuga consequatur nisi assumenda. Assumenda, voluptates! Est, porro? Beatae itaque deleniti minus, ipsam odit rem sed sunt?</p>
@@ -84,7 +86,7 @@ const Faq = () => {
       </Accordion>
       <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header" sx={{ "& .MuiAccordionSummary-expandIconWrapper": {color: 'var(--secondary-text)'}, backgroundColor: expanded === 'panel4' ? 'var(--primary-text)' : '#fff', color: expanded === 'panel4' ? 'var(--bg-white)' : 'var(--secondary-text)' , fontSize: '1.1rem', letterSpacing: '1px' }} >
-          <h4>I want car to be delivered by me, whow long will that take?</h4>
+          <h4>I want the car to be delivered to me, will that cost me extra?</h4>
         </AccordionSummary>
         <AccordionDetails sx={{ ml: 5 }}>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis similique aut porro provident molestias exercitationem reiciendis odio delectus sed atque cupiditate, sit adipisci quam voluptate quae aliquid accusamus soluta fuga consequatur nisi assumenda. Assumenda, voluptates! Est, porro? Beatae itaque deleniti minus, ipsam odit rem sed sunt?</p>
@@ -92,6 +94,7 @@ const Faq = () => {
       </Accordion>
         </div>
         </div>
+        <img className='side-car' src={sideCar} alt="side Car" />
     </section>
   )
 }
