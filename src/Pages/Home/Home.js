@@ -9,6 +9,7 @@ import WhyUs from '../../Components/WhyUs/WhyUs';
 import Review from '../../Components/Review/Review';
 import './home.css';
 import Faq from '../../Components/FAQ/Faq';
+import Download from '../../Components/Dowload/Download';
 
 
 const Home = () => {
@@ -36,6 +37,7 @@ const Home = () => {
         <WhyUs />
         <Support />
         <Review />
+        <Download />
         <Faq />
     </section>
   )

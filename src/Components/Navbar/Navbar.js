@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <section className="navbar container">
       <Link to='/' className='logo'>
-        <img src={logo} alt="logo" height={70} />
+        <img src={logo} alt="logo" className='nav-logo' />
       </Link>      
       <div className="nav-ul">
         <div className="ul">

@@ -61,7 +61,7 @@ const Faq = () => {
         </div>
         <div className="faq-bottom">
         <Accordion  expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" sx={{ "& .MuiAccordionSummary-expandIconWrapper": {color: 'var(--secondary-text)'}, backgroundColor: expanded === 'panel1' ? 'var(--primary-text)' : '#fff', color: expanded === 'panel1' ? 'var(--bg-white)' : 'var(--secondary-text)' , fontSize: '1.1rem', letterSpacing: '1px' }} >
+        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" sx={{ "& .MuiAccordionSummary-expandIconWrapper": {color: 'var(--secondary-text)'} , backgroundColor: expanded === 'panel1' ? 'var(--highlight)' : '#fff', color: expanded === 'panel1' ? 'var(--bg-white)' : 'var(--secondary-text)' , fontSize: '1.1rem', letterSpacing: '1px' }} >
           <h4>What's included in the package when hiring a car?</h4>
         </AccordionSummary>
         <AccordionDetails sx={{ ml: 5 }}>
@@ -69,7 +69,7 @@ const Faq = () => {
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header" sx={{ "& .MuiAccordionSummary-expandIconWrapper": {color: 'var(--secondary-text)'}, backgroundColor: expanded === 'panel2' ? 'var(--primary-text)' : '#fff', color: expanded === 'panel2' ? 'var(--bg-white)' : 'var(--secondary-text)' , fontSize: '1.1rem', letterSpacing: '1px' }} >
+        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header" sx={{ "& .MuiAccordionSummary-expandIconWrapper": {color: 'var(--secondary-text)'}, backgroundColor: expanded === 'panel2' ? 'var(--highlight)' : '#fff', color: expanded === 'panel2' ? 'var(--bg-white)' : 'var(--secondary-text)' , fontSize: '1.1rem', letterSpacing: '1px' }} >
           <h4>Will it be cheaper if I become a premium member?</h4>
         </AccordionSummary>
         <AccordionDetails sx={{ ml: 5 }}>
@@ -77,7 +77,7 @@ const Faq = () => {
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header" sx={{ "& .MuiAccordionSummary-expandIconWrapper": {color: 'var(--secondary-text)'}, backgroundColor: expanded === 'panel3' ? 'var(--primary-text)' : '#fff', color: expanded === 'panel3' ? 'var(--bg-white)' : 'var(--secondary-text)' , fontSize: '1.1rem', letterSpacing: '1px' }} >
+        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header" sx={{ "& .MuiAccordionSummary-expandIconWrapper": {color: 'var(--secondary-text)'}, backgroundColor: expanded === 'panel3' ? 'var(--highlight)' : '#fff', color: expanded === 'panel3' ? 'var(--bg-white)' : 'var(--secondary-text)' , fontSize: '1.1rem', letterSpacing: '1px' }} >
           <h4>Can I pick up from Leeds Branch and drop it at York Branch?</h4>
         </AccordionSummary>
         <AccordionDetails sx={{ ml: 5 }}>
@@ -85,7 +85,7 @@ const Faq = () => {
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-        <AccordionSummary aria-controls="panel4d-content" id="panel4d-header" sx={{ "& .MuiAccordionSummary-expandIconWrapper": {color: 'var(--secondary-text)'}, backgroundColor: expanded === 'panel4' ? 'var(--primary-text)' : '#fff', color: expanded === 'panel4' ? 'var(--bg-white)' : 'var(--secondary-text)' , fontSize: '1.1rem', letterSpacing: '1px' }} >
+        <AccordionSummary aria-controls="panel4d-content" id="panel4d-header" sx={{ "& .MuiAccordionSummary-expandIconWrapper": {color: 'var(--secondary-text)'}, backgroundColor: expanded === 'panel4' ? 'var(--highlight)' : '#fff', color: expanded === 'panel4' ? 'var(--bg-white)' : 'var(--secondary-text)' , fontSize: '1.1rem', letterSpacing: '1px' }} >
           <h4>I want the car to be delivered to me, will that cost me extra?</h4>
         </AccordionSummary>
         <AccordionDetails sx={{ ml: 5 }}>

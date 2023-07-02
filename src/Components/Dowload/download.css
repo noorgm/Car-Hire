@@ -1,0 +1,46 @@
+.download {
+    font-size: 2.3rem;
+    color: var(--bg-white);
+    max-height: 500px;
+    position: relative;
+    margin-top: 210px;
+    margin-bottom: 170px;
+}
+.download-bg {
+    background-color: var(--highlight);
+    border-radius: 53px;
+    min-height: 470px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    /* place-items: center; */
+}
+.download-left {
+    grid-column: 1 / 2;
+    padding-left: 37px;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.download-left p {
+    font-size: 1.3rem;
+    color: rgba(241, 241, 241, 0.6);
+}
+
+.download-store {
+    display: flex;
+    gap: 37px;
+    margin-top: 37px;
+}
+.download-store > img {
+    max-width: 190px;
+    cursor: pointer;
+}
+.phone-png {
+    /* min-width: 610px; */
+    max-height: 597px;
+    position: absolute;
+    right: 287px;
+    bottom: 0;
+}
