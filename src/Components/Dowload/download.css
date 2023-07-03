@@ -17,8 +17,8 @@
 }
 .download-left {
     grid-column: 1 / 2;
-    padding-left: 37px;
-    max-width: 45%;
+    padding-left: 97px;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,7 +33,7 @@
     gap: 37px;
     margin-top: 37px;
 }
-.download-store > img {
+.download-store > a img {
     max-width: 190px;
     cursor: pointer;
 }
