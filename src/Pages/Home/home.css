@@ -1,6 +1,6 @@
 .home {
     grid-area: content;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
 
 .home-main {

@@ -1,0 +1,15 @@
+.footer-bg {
+    grid-area: footer;
+    background-color: var(--secondary-text);
+    color: var(--bg-white);
+    min-height: 500px;
+}
+.footer {
+}
+
+
+
+.footer-logo {
+    margin-top: 10px;
+    width: 170px;
+}
