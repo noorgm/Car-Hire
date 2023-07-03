@@ -5,7 +5,9 @@ import logo from '../../Assets/images/logoo.svg';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import CopyrightIcon from '@mui/icons-material/Copyright';
 import './footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -13,8 +15,8 @@ const Footer = () => {
       <div className="footer container">
 
         <div className="left-footer">
-          <img src={logo} alt="logo" className='footer-logo' />
-          <h3>We have all sorts of car from Electric to Luxury and also few top sporty car.Leave us a message and we will call you back right away</h3>
+          <Link to='/'><img src={logo} alt="logo" className='footer-logo' /></Link>         
+          <h3>We have all sorts of car from Electric to Luxury. Leave us a message and we will call you back right away!</h3>
           <p>0113 345 7631</p>
           <p>admin@hireacar.co.uk</p>
         </div>
@@ -25,7 +27,7 @@ const Footer = () => {
             <div className="rf-left-items">
               <p>Rent a car</p>
               <p>Get in touch</p>
-              <p>Download our app</p>
+              <p>Our app</p>
             </div>
           </div>
           <div className="rf-left">
@@ -46,22 +48,22 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="bottom-footer">
+        <div className="bottom-footer container">
           <div className="bf-left">
-            <p>&copy; Noorullah GM. All right reserved 2023</p>
+            <p><CopyrightIcon className='copyright' />Noorullah GM. All right reserved 2023</p>
             <p>Privacy Policy</p>
             <p>Terms and Conditions</p>
           </div>
 
           <div className="bf-right">
-            <FacebookIcon />
-            <InstagramIcon />
-            <TwitterIcon />
+            <FacebookIcon className='footer-icon' />
+            <InstagramIcon className='footer-icon' />
+            <TwitterIcon className='footer-icon' />
           </div>
         </div>
         
-      </div>
     </section>
   )
 }
