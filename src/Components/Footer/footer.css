@@ -77,5 +77,9 @@
 .bf-left > p:first-of-type {
     display: flex;
     align-items: center;
-    gap: 3px;
+    /* gap: 3px; */
+}
+.copyright {
+    transform: scale(0.8);
+    margin-top: 1px;
 }

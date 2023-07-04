@@ -1,0 +1,105 @@
+.cars {
+    grid-area: content;
+    background-color: var(--bg-white);
+    padding: 70px 0px;
+    margin-top: 37px;
+}
+.car-h2 {
+    font-size: 2.7rem;
+    color: var(--primary-text);
+    padding-bottom: 17px;
+}
+/* Search Part */
+.car-search {
+    background-color: var(--bg-white);
+    display: grid;
+    grid-template-columns: 437px auto;
+    column-gap: 70px;
+    border: 1px solid var(--secondary-text);
+    border-radius: 23px;
+    font-size: 1.3rem;
+}
+.car-md {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+}
+.car-make, .car-model{
+    padding: 13px;    
+}
+.car-select {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    padding: 13px 9px 13px 9px;
+    border-radius: 9px;
+    width: 210px;
+    font-size: 1.1rem;
+}
+.car-btn {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+    margin-top: 25px;
+}
+.car-btn > button {
+    width: 10rem;
+    padding: 1.1rem 1.6rem 1.1rem 1.6rem;
+}
+
+/* Page After Search Button Pressed */
+.cig-bg {
+    /* background-color: antiquewhite; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.1rem;
+}
+.car-grid {
+    background-color: var(--bg-white);
+    box-shadow: 0px 0px 7px 1px var(--silver);
+    margin: 57px 31px 21px 31px;
+    padding: 27px;
+    display: flex;
+    flex-direction: column;
+    max-width: 490px;
+    max-height: 470px;
+}
+.car-end-grid {
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: space-between;
+}
+.car-end-grid-left {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.car-end-grid-left > p{
+    display: flex;
+    align-items: center;
+}
+.car-end-grid-right{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--pink);
+}
+.car-end-grid-center {
+    text-align: center;
+}
+.car-end-grid-center > img {
+    max-width: 300px;
+}
+
+.reserve-move-right {
+    float: right;
+    padding: 0px 10px 10px 10px;
+}
+.reserve-move-right a > button {
+    padding: 17px;
+    font-size: 1rem;
+    width: fit-content;
+}
+.car-icon {
+    color: var(--silver);
+    margin-top: 7px;
+}

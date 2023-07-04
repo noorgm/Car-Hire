@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import PersonalDetail from '../PersonalDetail/PersonalDetail';
+import { useLocation } from 'react-router-dom';
 
 import './form.css';
 
@@ -42,17 +43,30 @@ const Form = () => {
         setShowPersonalDetailsModal(false);
     };
 
+    const idLocation = useLocation();
+
+    useEffect(() => {
+        if (idLocation.hash) {
+            const element = document.getElementById(idLocation.hash.substring(1));
+            if(element) {
+                element.scrollIntoView();
+            }
+        } else {
+            window.scrollTo(0, 0)
+        }
+    }, [idLocation])
+
   return (
     <section className="book-it container">
         <div className="home-form">
-          <h1 className='form-hone'>Book a car</h1> <br />
+          <h1 id='form-id' className='form-hone'>Book a car</h1> <br />
 
           {/* Confirmation pop-up message */}
           {confirmationMessage && <div style={{ textAlign: 'center', color: 'var(--pinky)', fontWeight: 'bold', fontSize: '27px' }}>{confirmationMessage}</div>}
    
           {showError && <h1 className="required-message">* All fields are required to be provided!</h1>}
 
-          <form onSubmit={handleSubmit} className="main-form" id='form-id'>
+          <form onSubmit={handleSubmit} className="main-form" >
             {/* Car type select */}
             <div className="form-input one">
               <p>Select your car type <span className='star-sym'>*</span></p>
