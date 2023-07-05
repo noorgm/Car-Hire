@@ -102,4 +102,5 @@
 .car-icon {
     color: var(--silver);
     margin-top: 7px;
+    cursor: pointer;
 }
