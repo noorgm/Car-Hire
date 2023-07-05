@@ -3,6 +3,7 @@ import React from 'react';
 import lux from '../../Assets/images/heroo.png'
 import enjoy from '../../Assets/images/tip.jpeg';
 import './whyUs.css';
+import { Link } from 'react-router-dom';
 
 const WhyUs = () => {
   return (
@@ -23,7 +24,9 @@ const WhyUs = () => {
                         <li>Lorem, ipsum dolor.</li>
                     </ul>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, corrupti velit. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <button className='why-btn'>Contact Us</button>
+                    <Link to='/contact/#contact-id'>
+                        <button className='why-btn'>Contact Us</button>                    
+                    </Link>
                 </div>
                 <div className="why-right">
                     <img src={enjoy} alt="" />

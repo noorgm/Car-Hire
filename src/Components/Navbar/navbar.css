@@ -7,7 +7,10 @@
     /* background-color: aquamarine; */
     z-index: 1000;
 }
-
+.navbar button {
+    width: 9rem;
+    padding: 1.1rem 1.6rem 1.1rem 1.6rem;
+}
 .nav-ul {
     display: grid;
     grid-template-columns: 3fr auto;

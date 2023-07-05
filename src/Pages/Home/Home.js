@@ -10,6 +10,7 @@ import Review from '../../Components/Review/Review';
 import './home.css';
 import Faq from '../../Components/FAQ/Faq';
 import Download from '../../Components/Dowload/Download';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -23,7 +24,9 @@ const Home = () => {
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea.</p>
           <p>Dolor sit amet consectetur adipisicing.</p>
           <div className="home-left-bottom">
-            <button>Book Trip</button>
+            <Link to='/#form-id'>
+             <button>Book Trip</button>            
+            </Link>
             <p>+537 Reviews <br /><span><StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon /> </span></p>
           </div>
         </div>

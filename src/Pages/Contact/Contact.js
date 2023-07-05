@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import QuestionAnswerOutlinedIcon from '@mui/icons-material/QuestionAnswerOutlined';
 import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
@@ -6,13 +7,27 @@ import AddIcCallOutlinedIcon from '@mui/icons-material/AddIcCallOutlined';
 import './contact.css';
 
 const Contact = () => {
+
+    const idLocation = useLocation();
+
+    useEffect(() => {
+        if (idLocation.hash) {
+            const element = document.getElementById(idLocation.hash.substring(1));
+            if(element) {
+                element.scrollIntoView();
+            }
+        } else {
+            window.scrollTo(0, 0)
+        }
+    }, [idLocation])
+
   return (
     <main className="contact">
      <div className="contact-start">
         <h1>Contact</h1>
         <p>Contact our friendly team and let us know how we can help you.</p>
      </div>
-     <div className="contact-bg">
+     <div className="contact-bg" id='contact-id'>
         <div className="contact-main container">
             <div className="left-contact">
                 <div className="chat-contact">

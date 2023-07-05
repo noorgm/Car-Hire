@@ -18,13 +18,13 @@ const team = [
        id: 2, fullName: 'Mokhtar Jackson', job: 'Supervisor', img: supervisor
     }, 
     {
-       id: 3, fullName: 'Luke Adam', job: 'Cer Detailist', img: cardetailist
+       id: 3, fullName: 'Lucy Adam', job: 'Cer Detailist', img: cardetailist
     }, 
     {
        id: 4, fullName: 'Amy Smith', job: 'Sales Assistant', img: saless
     }, 
     {
-       id: 5, fullName: 'Sophie Miller', job: 'Sales Assistant', img: sales
+       id: 5, fullName: 'Ahmed Silvador', job: 'Sales Assistant', img: sales
     }
 ]
 
