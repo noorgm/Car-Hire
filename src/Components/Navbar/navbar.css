@@ -1,40 +1,40 @@
-.navbar {
+nav {
     grid-area: navbar;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 11px;
-    /* background-color: aquamarine; */
-    z-index: 1000;
-}
-.navbar button {
-    width: 9rem;
-    padding: 1.1rem 1.6rem 1.1rem 1.6rem;
-}
-.nav-ul {
-    display: grid;
-    grid-template-columns: 3fr auto;
-    align-items: center;
-    font-size: 1.2rem;
-}
-.nav-ul a {
-    text-decoration: none;
-    color: var(--secondary-text);
-    font-weight: 600;
-}
-.nav-ul a:hover {
-    color: var(--pink);
-}
-.ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);  
-    column-gap: 7px;
-}
-.one {
-    text-align: center;
 }
 
-.nav-logo {
-    margin-top: 10px;
-    width: 170px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

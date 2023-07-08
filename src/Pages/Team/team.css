@@ -1,4 +1,11 @@
-.team-bg {
+
+
+
+
+
+
+
+/* .team-bg {
     grid-area: content;
     padding: 31px 0px 0px 0px;
     color: var(--primary-text);
@@ -36,7 +43,8 @@ ul {
     font-size: 2.5rem;
 }
 
-/* END TEAM */
+
+
 .end-team {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -61,4 +69,4 @@ ul {
 .team-box-info p {
     font-weight: 500;
     font-size: 1.3rem;
-}
+} */

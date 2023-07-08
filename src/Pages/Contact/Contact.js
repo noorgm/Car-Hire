@@ -23,35 +23,37 @@ const Contact = () => {
 
   return (
     <main className="contact">
-     <div className="contact-start">
+      <section className="contact-start">
         <h1>Contact</h1>
         <p>Contact our friendly team and let us know how we can help you.</p>
-     </div>
-     <div className="contact-bg" id='contact-id'>
-        <div className="contact-main container">
-            <div className="left-contact">
-                <div className="chat-contact">
-                    <h3><span><QuestionAnswerOutlinedIcon className='contact-icon' /></span> Chat to us</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <p>info@hireacar.com</p>
-                </div>
-                <div className="visit-contact">
-                    <h3><span><BusinessOutlinedIcon className='contact-icon' /></span> Visit us</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <p>Lorem Townfield <br /> DWE LS99 7TY</p>
-                </div>
-                <div className="chat-contact">
-                    <h3><span><AddIcCallOutlinedIcon className='contact-icon' /></span> Call us</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <p>0113 571 3173</p>
-                </div>
-            </div>
+      </section>
 
-            <div className="right-contact">
-                <h3>Created and Designed by Noorullah GM</h3>
-            </div>
-        </div>        
-     </div>
+      <section className="grid">
+      <artitle className="contact-bg" id='contact-id'>
+        <div className="chat-contact">
+          <h3><span><QuestionAnswerOutlinedIcon className='contact-icon' /></span> Chat to us</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>info@hireacar.com</p>
+        </div>
+
+        <div className="visit-contact">
+          <h3><span><BusinessOutlinedIcon className='contact-icon' /></span> Visit us</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem Townfield <br /> DWE LS99 7TY</p>
+        </div>
+
+        <div className="chat-contact">
+          <h3><span><AddIcCallOutlinedIcon className='contact-icon' /></span> Call us</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>0113 571 3173</p>
+        </div>
+      </artitle>
+
+      <artitle className="right-contact">
+        <h3>Created and Designed by Noorullah GM</h3>
+      </artitle>   
+      </section>
+      
     </main>
   )
 }

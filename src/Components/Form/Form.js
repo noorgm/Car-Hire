@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
-import PersonalDetail from '../PersonalDetail/PersonalDetail';
 import { useLocation } from 'react-router-dom';
 
+import PersonalDetail from '../PersonalDetail/PersonalDetail';
 import './form.css';
-
 Modal.setAppElement('#root');
+
 
 const Form = () => {
 
@@ -57,17 +57,15 @@ const Form = () => {
     }, [idLocation])
 
   return (
-    <section className="book-it container">
+    <section className="book-it">
         <div className="home-form">
           <h1 id='form-id' className='form-hone'>Book a car</h1> <br />
-
-          {/* Confirmation pop-up message */}
+          
           {confirmationMessage && <div style={{ textAlign: 'center', color: 'var(--pinky)', fontWeight: 'bold', fontSize: '27px' }}>{confirmationMessage}</div>}
    
           {showError && <h1 className="required-message">* All fields are required to be provided!</h1>}
 
-          <form onSubmit={handleSubmit} className="main-form" >
-            {/* Car type select */}
+          <form onSubmit={handleSubmit} className="main-form grid" >
             <div className="form-input one">
               <p>Select your car type <span className='star-sym'>*</span></p>
               <select className="input-input" value={carType} onChange={(e) => setCarType(e.target.value)}>
@@ -81,7 +79,6 @@ const Form = () => {
               </select>
             </div>
 
-            {/* Pickup location select */}
             <div className="form-input two">
               <p>Pick up <span className='star-sym'>*</span></p>
               <select className="input-input" value={pickupLocation} onChange={(e) => setPickupLocation(e.target.value)}>
@@ -97,7 +94,6 @@ const Form = () => {
               </select>
             </div>
 
-            {/* Drop-off location select */}
             <div className="form-input three">
               <p>Return <span className='star-sym'>*</span></p>
               <select className="input-input" value={dropoffLocation} onChange={(e) => setDropoffLocation(e.target.value)}>
@@ -113,7 +109,6 @@ const Form = () => {
               </select>
             </div>
 
-            {/* Pickup date and time input */}
             <div className="form-input four">
               <p>Pick up date & time <span className='star-sym'>*</span></p>
               <input
@@ -124,7 +119,6 @@ const Form = () => {
               />
             </div>
 
-            {/* Return date and time input */}
             <div className="form-input five">
               <p>Return date & time <span className='star-sym'>*</span></p>
               <input
@@ -135,7 +129,6 @@ const Form = () => {
               />
             </div>
 
-            {/* Submit button */}
             <div className="btn">
               <button type="submit" className="input-input six">
                 Search

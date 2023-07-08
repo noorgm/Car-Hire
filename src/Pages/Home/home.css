@@ -1,6 +1,62 @@
 .home {
     grid-area: content;
-    /* padding-bottom: 100px; */
+}
+/* XS SCREEN */
+@media (min-width: 475px) {
+}
+
+/* S SCREEN */
+@media (min-width: 640px) {
+}
+
+/* MD SCREEN */
+@media (min-width: 768px) {
+    .home-right {
+        display: none;
+    }
+}
+
+/* L SCREEN */
+@media (min-width: 1024px) {
+}
+
+/* XL SCREEN */
+@media (min-width: 1280px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .home {
+    grid-area: content;
 }
 
 .home-main {
@@ -11,7 +67,6 @@
 .home-left {
     color: var(--primary-text);
     font-size: 2.5rem;
-    /* max-width: 40%; */
     margin-top: 9rem;
     z-index: 1;
 }
@@ -40,4 +95,4 @@
     top: 10px;
     width: 65vw;
     height: auto;
-}
+} */

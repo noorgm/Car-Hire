@@ -1,4 +1,32 @@
-.footer-bg {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .footer-bg {
     grid-area: footer;
     line-height: 2;
     background-color: var(--secondary-text);
@@ -45,7 +73,7 @@
     width: 170px;
 }
 
-/* BOTTOM FOOTER */
+
 .bottom-footer {
     border-top: 3px solid var(--pink);
     display: flex;
@@ -77,9 +105,8 @@
 .bf-left > p:first-of-type {
     display: flex;
     align-items: center;
-    /* gap: 3px; */
 }
 .copyright {
     transform: scale(0.8);
     margin-top: 1px;
-}
+} */

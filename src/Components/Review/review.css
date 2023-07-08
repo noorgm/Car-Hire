@@ -1,4 +1,23 @@
-/* CHANGING THE DEFAULT BUTTON'S VALUE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .review-bg button {
     width: auto;
     padding: none;
@@ -10,7 +29,7 @@
     transition: none;
 }
 
-/* TOP PART */
+
 .top-review {
     display: flex;
     justify-content: center;
@@ -67,7 +86,7 @@
     margin-bottom: 37px;
 }
 
-/* BOTTOM PART */
+
 .review-bottom-bg {
     margin-top: 3rem;
     background-color: var(--bg-white);
@@ -107,7 +126,6 @@
 }
 
 
-/* CAROUSEL LIBARY CLASSES */
 .carousel.carousel-slider .control-arrow {
     background-color: var(--highlight);
     opacity: 1;
@@ -131,4 +149,4 @@
 .review-box > img {
     max-width: 35px;
     padding: 0px 7px;
-}
+} */

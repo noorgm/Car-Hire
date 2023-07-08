@@ -1,4 +1,45 @@
-.contact {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .contact {
     grid-area: content;
     padding: 31px 0px 0px 0px;
 }
@@ -10,7 +51,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     color: var(--bg-white);
     font-size: 2.5rem;
     letter-spacing: 1px;
@@ -24,7 +64,6 @@
 }
 
 
-/* The Second Part */
 .contact-bg {
     background-color: var(--bg-white);
     min-height: 800px;
@@ -32,7 +71,6 @@
 .contact-main {
     display: grid;
     grid-template-columns: 500px 1fr;
-    /* column-gap: 37px; */
     padding-top: 73px;
     height: 673px;
 }
@@ -75,4 +113,4 @@
     justify-content: flex-end;
     flex-direction: column;
     text-align: center;
-}
+} */

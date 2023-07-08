@@ -27,24 +27,22 @@ const PersonalDetail = ({ carType, pickupLocation, dropoffLocation, pickupDateTi
 
   return (
     <form onSubmit={handleSubmit} className='personal-form'>
-
       <div className="complete-it">
         <h1>Complete Booking</h1>
         <button className='close' onClick={handleClose}>X</button>
       </div>
-      <div className="voucher-bg">
-      <div className="personal-voucher container">
+      
+      <div className="personal-voucher">
         <h3>Once providing your details, you will shortly receive: </h3>
         <p>Your rental customer's reference number which is needed on arrival to office to collect the car.</p>
       </div>
-      </div>
 
-      <div className="car-details container">
+      <div className="car-details grid">
         <div className="choosen-vehicle">
           <h3>Vehicle And The Time You're About To Reserve!</h3>
         </div>
-        <div className="choosen-info">
-          <div className="reserve-info reserve-center">
+        <div className="choosen-info grid">
+          <div className="reserve-info">
             <p>Vehicle:</p>
             <span>{carType}</span>
           </div>
@@ -67,11 +65,15 @@ const PersonalDetail = ({ carType, pickupLocation, dropoffLocation, pickupDateTi
         </div>
       </div>
 
+
+
+
+
       {/* Form Filling Section Starts Here */}
-      <div className='filling-form container'>     
+      <div className='filling-form'>     
       <h1>Personal Details Form</h1>
       <div className="personal-container">      
-      {errors && <h1 className="required-message">* All fields are required to be provided!</h1>}
+        {errors && <h1 className="required-message">* All fields are required to be provided!</h1>}
         <div className="personal-names">
           <div className='personal-name'>
             <p>Name <span className='star-sym'>*</span></p>

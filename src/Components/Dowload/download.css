@@ -1,4 +1,20 @@
-.download {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .download {
     font-size: 2.3rem;
     color: var(--bg-white);
     max-height: 500px;
@@ -13,7 +29,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    /* place-items: center; */
 }
 .download-left {
     grid-column: 1 / 2;
@@ -38,9 +53,8 @@
     cursor: pointer;
 }
 .phone-png {
-    /* min-width: 610px; */
     max-height: 597px;
     position: absolute;
     right: 287px;
     bottom: 0;
-}
+} */
