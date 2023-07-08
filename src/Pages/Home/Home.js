@@ -15,34 +15,39 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <section className="home">
-      <div className="home-main container">
+    <main className="home">
 
+      <section className='home-main grid'>
         <div className="home-left">
           <h4>Electric Cars Available</h4>
           <h1>Your Road Trip <br /><span className='starts'>Starts</span> Here</h1>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea.</p>
           <p>Dolor sit amet consectetur adipisicing.</p>
-          <div className="home-left-bottom">
-            <Link to='/#form-id'>
-             <button>Book Trip</button>            
-            </Link>
-            <p>+537 Reviews <br /><span><StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon /> </span></p>
-          </div>
         </div>
-        <Form />
-      </div>
+
+        <div className="home-left-bottom">
+          <Link to='/#form-id'>
+            <button>Book Trip</button>            
+          </Link>
+          <p>+537 Reviews <br /><span><StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon /> </span></p>
+        </div>
+
         <div className="home-right">
           <img src={hero} alt="hero" />
         </div>
 
-        <Tips />
-        <WhyUs />
-        <Support />
-        <Review />
-        <Download />
-        <Faq />
-    </section>
+        <Form />
+      </section>
+
+      {/* OTHER COMPONENTS */}
+      <Tips />
+      <WhyUs />
+      <Support />
+      <Review />
+      <Download />
+      <Faq />
+
+    </main>
   )
 }
 
