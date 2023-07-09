@@ -29,7 +29,7 @@ const Footer = () => {
               <p>Our app</p>
             </div>
           </div>
-          <div className="rf-left">
+          <div className="rf-left-two">
             <h4>Help</h4>
             <div className="rf-left-items">
               <p>About Us</p>
@@ -38,7 +38,7 @@ const Footer = () => {
               <p>FAQs</p>
             </div>
           </div>
-          <div className="rf-left">
+          <div className="rf-left-three">
             <h4>Working Hours</h4>
             <div className="rf-left-items">
               <p>Mon - Sat 24/hr</p>
