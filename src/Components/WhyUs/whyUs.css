@@ -17,7 +17,6 @@
 .why-us div {
     grid-column: 1 / 9;
 }
-
 .why-left > h2 {
     margin-bottom: 13px;
     text-align: center;
@@ -29,18 +28,15 @@
     font-weight: 600;
     letter-spacing: 2px;
 }
-
 .why-left > p:last-of-type {
     margin-bottom: 31px;
 }
-
 .why-right {
     max-width: 100%;
 }
 .why-right > img {
     display: block;
     width: min(500px, 100%);
-    /* margin: 31px 0px; */
     border-radius: 21px;
 }
 .why-left a {

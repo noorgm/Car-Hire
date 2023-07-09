@@ -6,7 +6,7 @@ import hero from '../../Assets/images/page-hero.svg';
 import Form from '../../Components/Form/Form';
 import Tips from '../../Components/Tips/Tips';
 import WhyUs from '../../Components/WhyUs/WhyUs';
-// import Support from '../../Components/Support/Support';
+import Support from '../../Components/Support/Support';
 // import Review from '../../Components/Review/Review';
 // import Faq from '../../Components/FAQ/Faq';
 // import Download from '../../Components/Dowload/Download';
@@ -42,7 +42,7 @@ const Home = () => {
       {/* OTHER COMPONENTS */}
       <Tips />
       <WhyUs />
-      {/* <Support /> */}
+      <Support />
       {/* <Review /> */}
       {/* <Download /> */}
       {/* <Faq />  */}
