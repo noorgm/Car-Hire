@@ -1,4 +1,35 @@
+.book-it {
+    font-size: 1.3rem;
+    margin: 37px 0px;
+} 
+form {
+    box-shadow: 0px 0px 7px 1px var(--silver);
+    margin: 13px 0;
+    padding: 11px;
+}
+.main-form h1 {
+    grid-column: 1 / 9;
+    grid-row: 1;
+    text-align: center;
+}
+.one, .two, .three, .four, .five, .btn {
+    grid-column: 1 / 9;
+}
+.input-input {
+    width: 100%;
+    border: 1px solid var(--silver);
+    outline: none;
+    border-radius: 3px;
+}
 
+.required-message {
+    color: var(--pink);
+    text-align: center;
+    font-size: 1.3rem;
+}
+.form-input, .six {
+    margin: 0px 10px;
+}
 
 
 
@@ -34,7 +65,7 @@
     box-shadow: 0px 0px 7px 1px var(--silver);
     z-index: 2;
     min-width: 1200px;
-}
+} 
 .home-form {
     width: 100%;
     padding: 43px;
@@ -42,7 +73,8 @@
 .form-hone {
     color: var(--secondary-text);
     font-size: 2.1rem;
-}
+} 
+
 .main-form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -70,14 +102,10 @@
 }
 .form-input, .six {
     margin: 10px;
-}
+} */
 
 
-
-
-
-
-.ReactModal__Content {
+/* .ReactModal__Content {
     width: 100%;
     max-width: 57vw;
     margin: 0 auto;
@@ -88,4 +116,4 @@
 }
 .ReactModal__Overlay {
     z-index: 3;
-} */
+}  */

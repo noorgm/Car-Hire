@@ -2,6 +2,70 @@
     grid-area: content;
 }
 
+/* MOBILE SCREEN */
+.home-right {
+    display: none;
+}
+.home-main {
+    margin-top: 17px;
+}
+.home-left {
+    grid-column: 1 / 9;
+    grid-row: 1;
+    text-align: center;
+}
+.home-left h4 {
+    color: var(--pink);
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 500;
+    padding-bottom: 7px;
+}
+.home-left h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+.home-left .starts {
+    color: var(--highlight);
+}
+.home-left p {
+    font-size: 1.1rem;
+}
+.home-left p:first-of-type {
+    margin-top: 23px;
+}
+.home-left-bottom {
+    grid-column: 1 / 9;
+    margin-top: 31px;
+    padding: 0 27px;
+}
+.home-left-bottom  button {
+    width: 100%;
+    max-width: 300px;
+}
+.home-left-bottom p {
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 21px;
+    color: var(--pink);
+}
+
+
+
+/* S SCREEN */
+@media (min-width: 620px) {
+   
+}
+
+/* MD SCREEN */
+@media (min-width: 960px) {
+   
+}
+
+/* XL SCREEN */
+@media (min-width: 1280px) {
+   
+}
 
 
 

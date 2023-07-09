@@ -2,8 +2,22 @@ nav {
     grid-area: navbar;
 }
 
-
-
+/* MOBILE SCREEN */
+nav {
+    margin-top: 27px;
+}
+.nav-logo {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    padding-bottom: 13px;
+}
+.nav-logo img {
+    width: 90%;
+    max-width: 101px;
+}
+.nav-ul, .nav-sign {
+    display: none;
+}
 
 
 

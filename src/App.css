@@ -7,7 +7,18 @@
     min-height: 100vh;    
 }
 
-
+/* UTILITIES */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 13px;
+    width: 85%;
+    /* background-color: aliceblue; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 7px;
+    padding-right: 7px;
+}
 
 
 /* DON'T TOUCH THE CODE BELOW UNTIL THE PROJECT IS COMPLETE */

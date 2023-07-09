@@ -1,16 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import StarIcon from '@mui/icons-material/Star';
 import hero from '../../Assets/images/page-hero.svg';
 import Form from '../../Components/Form/Form';
-import Tips from '../../Components/Tips/Tips';
-import Support from '../../Components/Support/Support';
-import WhyUs from '../../Components/WhyUs/WhyUs';
-import Review from '../../Components/Review/Review';
+// import Tips from '../../Components/Tips/Tips';
+// import Support from '../../Components/Support/Support';
+// import WhyUs from '../../Components/WhyUs/WhyUs';
+// import Review from '../../Components/Review/Review';
+// import Faq from '../../Components/FAQ/Faq';
+// import Download from '../../Components/Dowload/Download';
 import './home.css';
-import Faq from '../../Components/FAQ/Faq';
-import Download from '../../Components/Dowload/Download';
-import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
       <section className='home-main grid'>
         <div className="home-left">
           <h4>Electric Cars Available</h4>
-          <h1>Your Road Trip <br /><span className='starts'>Starts</span> Here</h1>
+          <h1>Your Road Trip <span className='starts'>Starts</span> Here</h1>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea.</p>
           <p>Dolor sit amet consectetur adipisicing.</p>
         </div>
@@ -36,16 +36,16 @@ const Home = () => {
           <img src={hero} alt="hero" />
         </div>
 
-        <Form />
       </section>
+      <Form />
 
       {/* OTHER COMPONENTS */}
-      <Tips />
+      {/* <Tips />
       <WhyUs />
       <Support />
       <Review />
       <Download />
-      <Faq />
+      <Faq /> */}
 
     </main>
   )
