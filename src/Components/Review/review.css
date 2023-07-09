@@ -1,14 +1,60 @@
+/* CAROULL STYLING */
+.carousel.carousel-slider .control-arrow {
+    background-color: var(--highlight);
+    opacity: 1;
+    color: cadetblue;
+    height: 17%;
+    max-height: 87px;
+    transform: translate(-1%, 220%);
+}
+.carousel.carousel-slider .control-arrow:hover {
+    background-color: var(--secondary-text);
+}
+.rev-logo > a {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.review-box:nth-of-type(odd) {
+    background-color: rgba(193, 193, 193, 0.25);
+}
+.review-box:nth-of-type(even) {
+    background-color: rgba(193, 193, 193, 0.5);
+}
+
+
+
+/* MOBILE SCREEN */
+.review-bg {
+    margin: 70px 0px;
+    background-color: silver;
+    padding: 27px 0px;
+}
+.review-bg > h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.top-review {
+    margin-bottom: 2.5rem;
+}
+.rev-logo {
+    grid-column: 2 / 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17px;
+}
+.rev-logo > img {
+    width: min(80%, 150px);
+}
 
 
 
 
-
-
-
-
-
-
-
+.face-commment {
+    font-style: italic;
+    font-weight: 600;
+    color: var(--secondary-text);
+}
 
 
 

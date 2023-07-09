@@ -21,9 +21,9 @@ const Review = () => {
 
   return (
     <section className="review-bg">
+      <h2>What people are saying</h2>
 
       <div className="top-review grid">        
-        <h2>What people are saying</h2>
         <div className="rev-logo">
           <img src={trust} alt="trustpilot" />
           <span><StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon /></span>                        

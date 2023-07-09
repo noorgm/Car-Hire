@@ -7,7 +7,7 @@ import Form from '../../Components/Form/Form';
 import Tips from '../../Components/Tips/Tips';
 import WhyUs from '../../Components/WhyUs/WhyUs';
 import Support from '../../Components/Support/Support';
-// import Review from '../../Components/Review/Review';
+import Review from '../../Components/Review/Review';
 // import Faq from '../../Components/FAQ/Faq';
 // import Download from '../../Components/Dowload/Download';
 import './home.css';
@@ -43,7 +43,7 @@ const Home = () => {
       <Tips />
       <WhyUs />
       <Support />
-      {/* <Review /> */}
+      <Review />
       {/* <Download /> */}
       {/* <Faq />  */}
 
