@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import StarIcon from '@mui/icons-material/Star';
 import hero from '../../Assets/images/page-hero.svg';
 import Form from '../../Components/Form/Form';
-// import Tips from '../../Components/Tips/Tips';
+import Tips from '../../Components/Tips/Tips';
+import WhyUs from '../../Components/WhyUs/WhyUs';
 // import Support from '../../Components/Support/Support';
-// import WhyUs from '../../Components/WhyUs/WhyUs';
 // import Review from '../../Components/Review/Review';
 // import Faq from '../../Components/FAQ/Faq';
 // import Download from '../../Components/Dowload/Download';
@@ -40,12 +40,12 @@ const Home = () => {
       <Form />
 
       {/* OTHER COMPONENTS */}
-      {/* <Tips />
+      <Tips />
       <WhyUs />
-      <Support />
-      <Review />
-      <Download />
-      <Faq /> */}
+      {/* <Support /> */}
+      {/* <Review /> */}
+      {/* <Download /> */}
+      {/* <Faq />  */}
 
     </main>
   )

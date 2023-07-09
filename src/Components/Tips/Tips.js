@@ -5,14 +5,15 @@ import './tips.css';
 
 const Tips = () => {
   return (
-    <section className="tips-bg grid">
+    <section className="tips-bg">
 
       <div className="left-tips">
         <img src={tips} alt="tips" />
       </div>
+      
+      <h2>Tips & Tricks</h2>
 
       <div className="right-tips grid">
-        <h2>Tips & Tricks</h2>
 
         <div className="tip-box">
           <p>Tip 1</p>

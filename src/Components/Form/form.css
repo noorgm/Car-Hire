@@ -15,6 +15,9 @@ form {
 .one, .two, .three, .four, .five, .btn {
     grid-column: 1 / 9;
 }
+.btn {
+    padding: 0px 9px;
+}
 .input-input {
     width: 100%;
     border: 1px solid var(--silver);
@@ -27,7 +30,7 @@ form {
     text-align: center;
     font-size: 1.3rem;
 }
-.form-input, .six {
+.form-input {
     margin: 0px 10px;
 }
 

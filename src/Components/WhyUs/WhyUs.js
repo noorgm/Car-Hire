@@ -26,7 +26,7 @@ const WhyUs = () => {
           </ul>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, corrupti velit. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           <Link to='/contact/#contact-id'>
-            <button className='why-btn'>Contact Us</button>                    
+            <button >Contact Us</button>                    
           </Link>
         </div>
         
