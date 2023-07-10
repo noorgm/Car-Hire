@@ -19,7 +19,6 @@
 .tips-bg > h2 {
     text-align: center;    
 }
-
 .right-tips {
     margin-top: 31px;
     margin-bottom: 31px;
@@ -44,7 +43,14 @@
     font-size: 1.3rem;
 }
 
+        /* SMALL SCREEN */
+@media (min-width: 620px) {
 
+    .right-tips .tip-box {
+        grid-column: span 4;
+        padding-bottom: 0px;
+    }
+}
 
 
 

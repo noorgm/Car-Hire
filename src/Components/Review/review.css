@@ -15,8 +15,6 @@
     font-weight: 700;
 }
 
-
-
 /* MOBILE SCREEN */
 .review-bg {
     margin: 70px 0px;
@@ -67,8 +65,10 @@
 }
 
 
-
-
+        /* S SCREEN */
+@media (min-width: 620px) {
+    
+}
 
 
 /* 
