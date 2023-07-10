@@ -8,8 +8,8 @@ import Tips from '../../Components/Tips/Tips';
 import WhyUs from '../../Components/WhyUs/WhyUs';
 import Support from '../../Components/Support/Support';
 import Review from '../../Components/Review/Review';
-// import Faq from '../../Components/FAQ/Faq';
-// import Download from '../../Components/Dowload/Download';
+import Download from '../../Components/Dowload/Download';
+import Faq from '../../Components/FAQ/Faq';
 import './home.css';
 
 
@@ -39,13 +39,12 @@ const Home = () => {
       </section>
       <Form />
 
-      {/* OTHER COMPONENTS */}
       <Tips />
       <WhyUs />
       <Support />
       <Review />
-      {/* <Download /> */}
-      {/* <Faq />  */}
+      <Download />
+      <Faq /> 
 
     </main>
   )

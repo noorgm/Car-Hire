@@ -1,10 +1,30 @@
 
-
-
-
-
-
-
+/* MOBILE SCREEN */
+.faq-bg {
+    background-color: var(--bg-white);
+    margin-top: 37px;
+    padding: 53px 0px;
+}
+.faq-top {
+    grid-column: 1 / 9;
+    grid-row: 1;
+    text-align: center;
+}
+.faq-top h2, p {
+    padding-bottom: 31px;
+}
+.faq-top p {
+    font-size: 1.2rem;
+}
+.faq-bottom {
+    grid-column: 1 / 9;
+}
+.MuiAccordionSummary-expandIconWrapper {
+    padding: 3px;
+}
+.side-car {
+    display: none;
+}
 
 
 
