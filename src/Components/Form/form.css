@@ -34,7 +34,48 @@ form {
     margin: 0px 10px;
 }
 
+@media (min-width: 960px) {
+    .main-form h1 {
+        grid-column: 1 / 9;
+        grid-row: 1;
+        text-align: center;
+    }
+    .one, .two, .three, .four, .five, .btn {
+        grid-column: span 4;
+    }
+    .form-input {
+        margin: 0px 33px;
+    }
 
+    
+    .book-it {
+        font-size: 1.3rem;
+        margin: 57px 0px;
+    } 
+    form {
+        padding: 41px 31px;
+    }
+    .main-form h1 {
+        grid-column: 1 / 9;
+        grid-row: 1;
+        text-align: center;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .six {
+        width: 90%;
+        margin: 50px 0px 30px 0px;
+    }
+    .input-input {
+        width: 100%;
+        border: 1px solid var(--silver);
+        outline: none;
+        border-radius: 3px;
+    }
+}
 
 
 

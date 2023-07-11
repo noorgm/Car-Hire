@@ -46,10 +46,37 @@
 }
 
 
+/* M SCREEN */
+@media (min-width: 960px) {
 
-
-
-
+    .why-us {
+        margin-top: 57px;
+    }
+    .why-us .why-left {
+        grid-column: 1 / 5;
+    }
+    .why-left > h2 {
+        margin-bottom: 23px;
+        text-align: left;
+    }
+    .why-us .why-right {
+        grid-column: 5 / 9;
+        max-width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .why-right > img {
+        display: block;
+        width: min(500px, 100%);
+        border-radius: 21px;
+    }
+    .why-left a {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 0px;
+        margin: 20px;
+    }
+}
 
 
 

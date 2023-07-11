@@ -17,9 +17,8 @@
 
 /* MOBILE SCREEN */
 .review-bg {
-    margin: 70px 0px;
     background-color: silver;
-    padding: 27px 0px;
+    padding: 57px 0px;
 }
 .review-bg > h2 {
     text-align: center;
@@ -35,7 +34,7 @@
     align-items: center;
     margin-top: 17px;
 }
-.rev-logo > img {
+.top-review img {
     width: min(80%, 150px);
 }
 /* The Second Part */
@@ -67,9 +66,26 @@
 
         /* S SCREEN */
 @media (min-width: 620px) {
-    
+    .rev-logo {
+        grid-column: span 3;
+        grid-row: 1;
+        margin-top: 27px;
+    }
+    .rev-logo > img {
+        width: min(100%, 150px);
+        height: 51px;
+        margin-bottom: 21px;
+    }
+    .card-mfaces {
+        grid-column: 2 / 9;
+    }
 }
 
+@media (min-width: 960px) {
+    .card-mfaces {
+        grid-column: span 4;
+    }
+}
 
 /* 
 .review-bg button {

@@ -32,7 +32,7 @@
     font-size: 1.1rem;
 }
 .home-left p:first-of-type {
-    margin-top: 23px;
+    padding-top: 23px;
 }
 .home-left-bottom {
     grid-column: 1 / 9;
@@ -54,15 +54,50 @@
     color: var(--pink);
 }
 
-
-/* S SCREEN */
-@media (min-width: 620px) {
-   
-}
-
 /* MD SCREEN */
 @media (min-width: 960px) {
-   
+
+    body {
+        position: relative;
+    }
+    .home-left {
+        grid-column: 1 / 6;
+        margin-top: 21px;
+        text-align: left;
+        z-index: 1000;
+    }
+    .home-left h1 {
+        font-size: 5rem;
+        font-weight: 800;
+    }
+    .home-left-bottom {
+        grid-column: 1 / 5;
+        margin-top: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        gap: 31px;
+        /* background-color: blueviolet; */
+        z-index: 1000;
+    }
+    .home-left-bottom a button {
+        /* width: 100%; */
+        min-width: 197px;
+    }
+    .home-left-bottom p {
+        font-size: 1.1rem;
+        padding-top: 21px;
+        color: var(--pink);
+    }
+    .home-right {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: max(60%, 800px);
+        height: auto;
+    }    
 }
 
 /* XL SCREEN */
