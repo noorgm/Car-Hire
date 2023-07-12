@@ -21,8 +21,8 @@ const Home = () => {
         <div className="home-left">
           <h4>Electric Cars Available</h4>
           <h1>Your Road Trip <span className='starts'>Starts</span> Here</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea,
-          Dolor sit amet consectetur adipisicing.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea,</p>
+          <p>Dolor sit amet consectetur adipisicing.</p>
         </div>
 
         <div className="home-left-bottom">
@@ -35,10 +35,9 @@ const Home = () => {
         <div className="home-right">
           <img src={hero} alt="hero" />
         </div>
-
       </section>
       <Form />
-
+      
       <Tips />
       <WhyUs />
       <Support />

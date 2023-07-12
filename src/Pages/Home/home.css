@@ -57,14 +57,14 @@
 /* MD SCREEN */
 @media (min-width: 960px) {
 
-    body {
+    .app {
         position: relative;
     }
     .home-left {
         grid-column: 1 / 6;
         margin-top: 21px;
         text-align: left;
-        z-index: 1000;
+        z-index: 2;
     }
     .home-left h1 {
         font-size: 5rem;
@@ -79,7 +79,7 @@
         align-items: left;
         gap: 31px;
         /* background-color: blueviolet; */
-        z-index: 1000;
+        z-index: 3;
     }
     .home-left-bottom a button {
         /* width: 100%; */
@@ -95,14 +95,13 @@
         position: absolute;
         right: 0;
         top: 0;
-        width: max(60%, 800px);
-        height: auto;
+        width: max(55%, 800px);
+        z-index: 0;
     }    
 }
 
 /* XL SCREEN */
 @media (min-width: 1280px) {
-   
 }
 
 

@@ -58,13 +58,13 @@ const Form = () => {
 
   return (
     <div className="book-it">
+      <h1 id='form-id' >Book a car</h1>
   
       {confirmationMessage && <div style={{ textAlign: 'center', color: 'var(--pinky)', fontWeight: 'bold', fontSize: '27px' }}>{confirmationMessage}</div>}
    
       {showError && <h1 className="required-message">* All fields are required to be provided!</h1>}
           
       <form onSubmit={handleSubmit} className="main-form grid">
-        <h1 id='form-id' >Book a car</h1>
         <div className="form-input one">
           <p>Select your car type <span className='star-sym'>*</span></p>
           <select className="input-input" value={carType} onChange={(e) => setCarType(e.target.value)}>

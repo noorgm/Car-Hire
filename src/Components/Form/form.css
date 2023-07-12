@@ -1,22 +1,30 @@
+
+
+/* MOBILE SCREEN */
 .book-it {
     font-size: 1.3rem;
     margin: 37px 0px;
-} 
-form {
+    background-color: var(--bg-white);
     box-shadow: 0px 0px 7px 1px var(--silver);
-    margin: 13px 0;
-    padding: 11px;
-}
-.main-form h1 {
-    grid-column: 1 / 9;
-    grid-row: 1;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.book-it > h1 {
     text-align: center;
+    padding-top: 21px;
 }
-.one, .two, .three, .four, .five, .btn {
+.main-form {
+    padding: 41px 0px;
+}
+.main-form > div {
     grid-column: 1 / 9;
 }
-.btn {
-    padding: 0px 9px;
+.main-form p {
+    padding-bottom: 11px;
+}
+.six {
+    width: 100%;
 }
 .input-input {
     width: 100%;
@@ -30,123 +38,71 @@ form {
     text-align: center;
     font-size: 1.3rem;
 }
-.form-input {
-    margin: 0px 10px;
-}
+@media (min-width: 700px) {
 
-@media (min-width: 960px) {
-    .main-form h1 {
-        grid-column: 1 / 9;
-        grid-row: 1;
-        text-align: center;
-    }
-    .one, .two, .three, .four, .five, .btn {
+    .main-form > div {
         grid-column: span 4;
     }
-    .form-input {
-        margin: 0px 33px;
-    }
-
-    
-    .book-it {
-        font-size: 1.3rem;
-        margin: 57px 0px;
-    } 
-    form {
-        padding: 41px 31px;
-    }
-    .main-form h1 {
-        grid-column: 1 / 9;
-        grid-row: 1;
-        text-align: center;
-    }
+    .book-it > h1 {
+        text-align: left;
+        padding-left: 91px;
+    }   
     .btn {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: flex-end;
+        margin-top: 7px;
     }
     .six {
-        width: 90%;
-        margin: 50px 0px 30px 0px;
-    }
-    .input-input {
-        width: 100%;
-        border: 1px solid var(--silver);
-        outline: none;
-        border-radius: 3px;
+        margin: 30px 0px;
+        padding: 0.7rem 0.5rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .book-it {
-    background-color: #fff;
-    position: absolute;
-    left: 50%;
-    top: 87%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    box-shadow: 0px 0px 7px 1px var(--silver);
-    z-index: 2;
-    min-width: 1200px;
-} 
-.home-form {
-    width: 100%;
-    padding: 43px;
-}
-.form-hone {
-    color: var(--secondary-text);
-    font-size: 2.1rem;
+@media (min-width: 1000px) {
+    .book-it > h1 {
+        padding-left: 63px;
+    }
 } 
 
-.main-form {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    color: var(--secondary-text);
-}
-.input-input {
-    width: 100%;
-    padding: 13px;
-    border: 1px solid var(--silver);
-    outline: none;
-    border-radius: 3px;
-}
-.form-input p {
-    text-align: left;
-}
-.btn {
-    display: flex;
-    align-items: flex-end;
+@media (min-width: 1150px) {
+    .main-form > div {
+        grid-column: span 3;
+    }
+    .one, .two, .three {
+        grid-row: 1;
+    }
 }
 
-.required-message {
-    color: var(--pink);
-    text-align: center;
-    font-size: 1.3rem;
-}
-.form-input, .six {
-    margin: 10px;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* .ReactModal__Content {
