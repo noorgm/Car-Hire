@@ -55,5 +55,8 @@
     }
     .right-tips {
         grid-column: 5 / 9;
+        /* background-color: cadetblue; */
+        max-height: 610px;     
+        margin-top: 97px;   
     }
 }

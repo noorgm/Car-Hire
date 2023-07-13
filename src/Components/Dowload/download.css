@@ -3,7 +3,7 @@
 .download-bg {
     padding: 57px 0px;
 }
-.download-bg div {
+.download-left {
     grid-column: 1 / 9;
     text-align: center;
 }
@@ -19,7 +19,9 @@
     margin: 31px 0px;
 }
 .download-store {
+    grid-column: 1 / 9;
     width: 100%;
+    text-align: center;
 }
 .download-store a > img {
     max-width: 237px;
@@ -33,12 +35,39 @@
         align-items: center;
         justify-content: center;
     }
-
     .download-store a > img {
         padding-bottom: 0px;
     }
 }
 
+@media (min-width: 1280px) {
+
+    .download-bg {
+        padding: 57px 0px 0px 0px;
+        position: relative;
+        min-height: 470px;
+    }
+    .download-right {
+        display: block;
+    }
+    .download-right > img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-height: 430px;
+    }
+    .download-left {
+        grid-column: 1 / 6;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .download-store {
+        grid-column: 1 / 6;
+        align-items: flex-start;
+    }
+}
 
 
 

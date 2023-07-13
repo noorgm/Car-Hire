@@ -2,8 +2,8 @@
 /* MOBILE SCREEN */
 .faq-bg {
     background-color: var(--bg-white);
-    margin-top: 37px;
-    padding: 53px 0px;
+    /* margin-top: 37px; */
+    padding: 73px 0px;
 }
 .faq-top {
     grid-column: 1 / 9;
@@ -27,7 +27,17 @@
 }
 
 
-
+@media (min-width: 1000px) {
+    .faq-top {
+        grid-column: 2 / 8;
+        grid-row: 1;
+        text-align: center;
+    }
+    .faq-bottom {
+        max-width: 70vw;
+        margin: auto;
+    }
+}
 
 
 
