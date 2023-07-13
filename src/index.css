@@ -32,8 +32,7 @@
 
 html, body {
     font-size: 16px;
-    background-image: url('./Assets/images/background.png');
-    background-size: cover;
+    background-color: #f1f1f144;
     font-family: 'Ysabeau SC', sans-serif;
     height: 100%;
 }
@@ -52,12 +51,11 @@ button {
     padding: 1rem 0.8rem;
     border-radius: 3px;
     text-transform: uppercase;
-    box-shadow: 0px 0px 7px 1px var(--silver);
     cursor: pointer;
 }
 button:hover {    
-    box-shadow: 0px 3px 7px var(--secondary-text);
-    transition: 0.1s;
+    background-color: var(--darkblue);
+    transition: 0.2s;
 }
 
 input, select {

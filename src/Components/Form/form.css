@@ -59,12 +59,19 @@
     }
 }
 @media (min-width: 1000px) {
+    .book-it {
+        margin-top: 91px;
+        margin-bottom: 97px;
+    }
     .book-it > h1 {
         padding-left: 63px;
     }
 } 
 
 @media (min-width: 1150px) {
+    .book-it {
+        max-width: 65%;
+    } 
     .main-form > div {
         grid-column: span 3;
     }

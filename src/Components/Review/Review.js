@@ -45,7 +45,7 @@ const Review = () => {
       <Carousel showThumbs={false} showStatus={false} showArrows={true}>
         {
           reviewDAT.map((review) => (
-            <div className="review-bottom-bg grid">
+            <div className="review-bottom-bg">
               {
                 review.map(face => (
                   <div key={face.id} className="review-box" >
@@ -68,7 +68,7 @@ const Review = () => {
       </Carousel>
 
       {/* For Mobile Screen only */}
-      <section className="grid">
+      <section className="mfaze grid">
         {
           mobileFaces.map((mfaces) => (
             <div className="card-mfaces" key={mfaces.id}>

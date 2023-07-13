@@ -41,10 +41,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: blueviolet; */
 }
 .home-left-bottom a button {
-    /* width: 100%; */
     min-width: 237px;
 }
 .home-left-bottom p {
@@ -56,7 +54,9 @@
 
 /* MD SCREEN */
 @media (min-width: 960px) {
-
+    .home-main {
+        margin-top: 73px;
+    }
     .app {
         position: relative;
     }
@@ -102,8 +102,21 @@
 
 /* XL SCREEN */
 @media (min-width: 1280px) {
+    .home-left {
+        grid-column: 1 / 5;
+    }
 }
 
+@media (min-width: 1350px) {
+    .home-right {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: max(65%, 800px);
+        z-index: 0;
+    } 
+}
 
 
 
