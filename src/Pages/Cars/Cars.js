@@ -98,6 +98,7 @@ const Cars = () => {
       {/* Once user seleted their choosen make and model upon pressing the search button the following data will be displyed about their seleted make model */}
       {
         carData && (
+          <div className="scs-bgg">
           <section className="single-cr-search grid">
             <div className="scs-main">
               <div className="scs">
@@ -109,7 +110,7 @@ const Cars = () => {
               </Link>     
             </div>
 
-            <img src={carData.img} alt="car" />
+            <img src={carData.img} alt="car" className='scs-car' />
 
             <div className="scs-btm">
               <p> <span><PersonOutlineOutlinedIcon className='car-icon' /></span> {carData.seat}</p>
@@ -120,6 +121,7 @@ const Cars = () => {
               </div>
             </div>
           </section>
+          </div>
         )
       }
 
