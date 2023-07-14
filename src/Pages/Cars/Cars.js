@@ -112,10 +112,21 @@ const Cars = () => {
 
             <img src={carData.img} alt="car" className='scs-car' />
 
-            <div className="scs-btm">
-              <p> <span><PersonOutlineOutlinedIcon className='car-icon' /></span> {carData.seat}</p>
-              <p> <span><RepeatOutlinedIcon className='car-icon' /></span> {carData.transmission}</p>
-              <p> <span><WaterDropOutlinedIcon className='car-icon' /></span> {carData.mileage}</p>
+            <div className="scs-btm grid">
+              <div className="scs-btm-left">
+                <div className="scs-btm-box">
+                  <span className='car-icon'><PersonOutlineOutlinedIcon /></span>
+                  <p>{carData.seat}</p>
+                </div>
+                <div className="scs-btm-box">
+                  <span className='car-icon'><RepeatOutlinedIcon /></span>
+                  <p>{carData.transmission}</p>
+                </div>
+                <div className="scs-btm-box">
+                  <span className='car-icon'><WaterDropOutlinedIcon /></span>
+                  <p>{carData.mileage}</p>
+                </div>                
+              </div>
               <div className="scs-btm-r">
                 <p>{carData.price}</p>       
               </div>
@@ -126,43 +137,83 @@ const Cars = () => {
       }
 
 
-        {/* Upon Pressing Search All Button */}
-        {
-          searchAll && (
-          <section className="single-cr-search grid">
+      {/* Upon Pressing Search All Button */}
+      {
+        searchAll && (
+          <div className="scs-bgg scs-new">
             {
-              allCarsData.map((car, index) => (    
-                <>
-                <div className="scs-main">
-                  <div className="scs">
-                    <h2>{car.make} {car.model} </h2>
-                    <p>{car.sprt}</p>              
-                  </div>  
-                  <Link to='/#form-id'>
-                    <button>Reserve Now</button>                  
-                  </Link>     
-                </div>
-    
-                <img src={car.img} alt="car" />
-    
-                <div className="scs-btm">
-                  <p> <span><PersonOutlineOutlinedIcon className='car-icon' /></span> {car.seat}</p>
-                  <p> <span><RepeatOutlinedIcon className='car-icon' /></span> {car.transmission}</p>
-                  <p> <span><WaterDropOutlinedIcon className='car-icon' /></span> {car.mileage}</p>
-                  <div className="scs-btm-r">
-                    <p>{car.price}</p>       
+              allCarsData.map((car, index) => (
+                <div className="single-cr-search grid">
+                  <div className="scs-main">
+                    <div className="scs">
+                      <h2>{car.make} {car.model} </h2>
+                      <p>{car.sprt}</p>              
+                    </div>  
+                    <Link to='/#form-id'>
+                      <button>Reserve Now</button>                  
+                    </Link>     
                   </div>
-              </div>         
-              </>       
+
+                  <img src={car.img} alt="car" className='scs-car' />
+
+                  <div className="scs-btm grid">
+                    <div className="scs-btm-left">
+                      <div className="scs-btm-box">
+                        <span className='car-icon'><PersonOutlineOutlinedIcon /></span>
+                        <p>{car.seat}</p>
+                      </div>
+                      <div className="scs-btm-box">
+                        <span className='car-icon'><RepeatOutlinedIcon /></span>
+                        <p>{car.transmission}</p>
+                      </div>
+                      <div className="scs-btm-box">
+                        <span className='car-icon'><WaterDropOutlinedIcon /></span>
+                        <p>{car.mileage}</p>
+                      </div>                
+                    </div>
+                    <div className="scs-btm-r">
+                      <p>{car.price}</p>       
+                    </div>
+                  </div>
+                </div>
               ))
             }
-          </section>
-          )
-        }
+          </div>
+        )
+      }
+       
 
 
     </main>    
   )
 }
 
-export default Cars
+export default Cars;
+
+
+//         <div className="scs-main">
+//           <div className="scs">
+//             <h2>{car.make} {car.model} </h2>
+//             <p>{car.sprt}</p>              
+//           </div>  
+//           <Link to='/#form-id'>
+//             <button>Reserve Now</button>                  
+//           </Link>     
+//         </div>
+
+//         <img src={car.img} alt="car" />
+
+//         <div className="scs-btm">
+//           <p> <span><PersonOutlineOutlinedIcon className='car-icon' /></span> {car.seat}</p>
+//           <p> <span><RepeatOutlinedIcon className='car-icon' /></span> {car.transmission}</p>
+//           <p> <span><WaterDropOutlinedIcon className='car-icon' /></span> {car.mileage}</p>
+//           <div className="scs-btm-r">
+//             <p>{car.price}</p>       
+//           </div>
+//         </div>         
+//       </>       
+//       ))
+//     }
+//   </section>
+//   )
+// }
