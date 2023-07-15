@@ -1,7 +1,6 @@
 import React from 'react';
 
 import team from '../../Assets/Data/team';
-import src from '../../Assets/images/tip3.jpg';
 import './team.css';
 
 const Team = () => {
@@ -22,18 +21,20 @@ const Team = () => {
       </section>
 
       <section className="end-team">
-      <h1 className='meet-team'>Meet the team</h1>
-        {
-          team.map((teams) => (
-            <div key={teams.id} className="team-box grid">
-              <img src={teams.img} alt="ceo" />
-              <div className="team-box-info">
-                <h4>{teams.fullName}</h4>
-                <p>{teams.job}</p>
+        <h1>Meet the team</h1>
+          {
+            team.map((teams) => (
+              <div className="end-team-parent grid">
+                <div key={teams.id} className="team-box">
+                  <img src={teams.img} alt="ceo" />
+                  <div className="team-box-info">
+                    <h4>{teams.fullName}</h4>
+                    <p>{teams.job}</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          ))
-        }
+            ))
+          }
       </section>
       
     </main>
