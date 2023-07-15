@@ -52,7 +52,7 @@
 .scs-bgg {
 }
 .single-cr-search {
-    width: min(100%, 513px);
+    max-width: 393px;
     margin-top: 53px;
     box-shadow: 0px 0px 7px 1px var(--silver);
     margin-bottom: 21px;
@@ -111,8 +111,8 @@
 
 @media (min-width: 550px) {
     .scs-bgg {
-        margin-left: auto;
-        margin-right: auto;
+        /* margin-left: auto;
+        margin-right: auto; */
     }
 }
 
@@ -162,11 +162,14 @@
     }
 
     /* CARD */
-    .scs-bgg {
-        background-color: aqua;
-        /* width: 85vw;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px; */
+    .scs-new {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+
+@media (min-width: 1470px) {
+    .scs-new {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

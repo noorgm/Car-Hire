@@ -99,39 +99,39 @@ const Cars = () => {
       {
         carData && (
           <div className="scs-bgg">
-          <section className="single-cr-search grid">
-            <div className="scs-main">
-              <div className="scs">
-                <h2>{carData.make} {carData.model} </h2>
-                <p>{carData.sprt}</p>              
-              </div>  
-              <Link to='/#form-id'>
-                <button>Reserve Now</button>                  
-              </Link>     
-            </div>
-
-            <img src={carData.img} alt="car" className='scs-car' />
-
-            <div className="scs-btm grid">
-              <div className="scs-btm-left">
-                <div className="scs-btm-box">
-                  <span className='car-icon'><PersonOutlineOutlinedIcon /></span>
-                  <p>{carData.seat}</p>
-                </div>
-                <div className="scs-btm-box">
-                  <span className='car-icon'><RepeatOutlinedIcon /></span>
-                  <p>{carData.transmission}</p>
-                </div>
-                <div className="scs-btm-box">
-                  <span className='car-icon'><WaterDropOutlinedIcon /></span>
-                  <p>{carData.mileage}</p>
-                </div>                
+            <section className="single-cr-search grid">
+              <div className="scs-main">
+                <div className="scs">
+                  <h2>{carData.make} {carData.model} </h2>
+                  <p>{carData.sprt}</p>              
+                </div>  
+                <Link to='/#form-id'>
+                  <button>Reserve Now</button>                  
+                </Link>     
               </div>
-              <div className="scs-btm-r">
-                <p>{carData.price}</p>       
+
+              <img src={carData.img} alt="car" className='scs-car' />
+
+              <div className="scs-btm grid">
+                <div className="scs-btm-left">
+                  <div className="scs-btm-box">
+                    <span className='car-icon'><PersonOutlineOutlinedIcon /></span>
+                    <p>{carData.seat}</p>
+                  </div>
+                  <div className="scs-btm-box">
+                    <span className='car-icon'><RepeatOutlinedIcon /></span>
+                    <p>{carData.transmission}</p>
+                  </div>
+                  <div className="scs-btm-box">
+                    <span className='car-icon'><WaterDropOutlinedIcon /></span>
+                    <p>{carData.mileage}</p>
+                  </div>                
+                </div>
+                <div className="scs-btm-r">
+                  <p>{carData.price}</p>       
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
           </div>
         )
       }
