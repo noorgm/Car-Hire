@@ -1,0 +1,18 @@
+.sign-bg {
+    grid-area: content;    
+    margin-top: 7px;
+    padding: 33px 0px;
+}
+
+/* MOBILE SCREEN */
+.sign-in {
+    margin: 110px 0px;
+    text-align: center;
+    background-color: var(--highlight);
+}
+.sign-top {
+    grid-column: 1 / 9;
+}
+.fixing-part {
+    grid-column: 1 / 9;
+}
