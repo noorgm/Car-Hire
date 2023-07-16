@@ -22,9 +22,9 @@ const Team = () => {
 
       <section className="end-team">
         <h1>Meet the team</h1>
+        <div className="end-team-parent">
           {
             team.map((teams) => (
-              <div className="end-team-parent grid">
                 <div key={teams.id} className="team-box">
                   <img src={teams.img} alt="ceo" />
                   <div className="team-box-info">
@@ -32,9 +32,9 @@ const Team = () => {
                     <p>{teams.job}</p>
                   </div>
                 </div>
-              </div>
             ))
           }
+        </div>
       </section>
       
     </main>

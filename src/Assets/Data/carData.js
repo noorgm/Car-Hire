@@ -11,7 +11,7 @@ const allCarsData = [
         make: 'BMW', model: '5 Series', year: '2023', seat: '5', mileage: '230m/day', transmission: 'Automatic', sprt: 'Sport Line', price: '£51/day', img: fiveSeries
     }, 
     {
-        make: 'Mercedez', model: 'E Class', year: '2023', seat: '5', mileage: '230m/day', transmission: 'Manual', sprt: 'AMG', price: '£67/day', img: premiumCar
+        make: 'Mercdz', model: 'E Class', year: '2023', seat: '5', mileage: '230m/day', transmission: 'Manual', sprt: 'AMG', price: '£67/day', img: premiumCar
     }
 ]
 
