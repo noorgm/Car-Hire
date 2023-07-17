@@ -1,84 +1,76 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .personal-form {
+.personal-main-form {
     background-color: #fff;
+    z-index: 9999;
 }
+.personal-form {
+    background-color: aquamarine;
+    z-index: 9999;
+}
+/* MOBILE SCREEN */
+/* .personal-form-start {
+    padding: 13px;
+} */
 .complete-it {
     background: var(--pink);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    color: var(--bg-white);
-    word-spacing: 9px;
-    letter-spacing: 2px;
-    font-size: 1.3rem;
-}
-.voucher-bg {
-    background-color: rgba(255, 101, 132, 0.3);
     padding: 11px;
-    margin-bottom: 23px;
+}
+.complete-it > h1 {
+    font-size: 1.1rem;
+}
+.complete-it button {
+    padding: 3px 17px;
 }
 .personal-voucher {
-    padding: 17px;
-}
-.personal-voucher > h3, .choosen-vehicle > h3 {
-    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
     color: var(--secondary-text);
-    margin: 10px 0px 7px 0px;
+    font-size: 1.3rem;
+    background-color: var(--pinky);
+}
+.personal-voucher > h3 {
+    margin-top: 23px;
 }
 .personal-voucher > p {
-    font-size: 1.1rem;
-    color: var(--secondary-text);
-    text-align: center;
+    margin: 23px 0px;
+    font-size: 1.2rem;
     font-weight: 500;
+    padding: 0;
+    font-style: italic;
 }
 .car-details {
-    margin-bottom: 30px;
+    background-color: rgb(252, 255, 228);
+    padding: 23px 0px;
+    display: flex;
+    flex-direction: column;
 }
 .choosen-vehicle {
     text-align: center;
+    font-size: 1.3rem;
+    padding: 0.5rem;
 }
+
 .choosen-info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 27px 2px;
-    grid-template-rows: minmax(50px, auto);
-    margin-top: 17px;
-    text-transform: capitalize;
-    margin-bottom: 10px;
-    color: var(--secondary-text);
+    margin-top: 37px;
+    padding-bottom: 17px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
 }
 .reserve-info > p {
+    padding: 0px;
+    color: var(--highlight);
     margin-bottom: 5px;
     font-size: 19px;
     font-weight: bold;
 }
 .reserve-info > span {
-    font-size: 17px;
+    font-size: 1.1rem;
 }
+/* 
 
 
 .filling-form {

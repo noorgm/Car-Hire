@@ -79,7 +79,7 @@
         align-items: left;
         gap: 31px;
         /* background-color: blueviolet; */
-        z-index: 3;
+        /* z-index: 3; */
     }
     .home-left-bottom a button {
         /* width: 100%; */
