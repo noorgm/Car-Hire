@@ -38,7 +38,6 @@
 .contact-start > h1 {
     font-size: 3rem;
     font-weight: 800;
-    color: var(--pink);
 }
 .contact-start p {
     margin-top: 23px;
@@ -147,5 +146,17 @@
         justify-content: flex-end;
         align-items: center;
         text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-bg {
+        width: 40%;
+    }
+    .right-contact {
+        width: 60%;
+    }
+    .right-contact-bg {
+        width: 100%;
     }
 }

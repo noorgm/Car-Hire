@@ -72,7 +72,7 @@ nav button {
     }
     .nav-ul, .nav-sign {
         display: block;
-        /* z-index: 9999; */
+        z-index: 9999;
     }
     .nav-ul {
         grid-column: 4 / 7;
