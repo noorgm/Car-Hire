@@ -113,7 +113,7 @@
         position: absolute;
         right: 0;
         top: 0;
-        width: max(65%, 800px);
+        width: max(64%, 800px);
         z-index: 0;
     } 
 }
