@@ -3,7 +3,7 @@
     z-index: 9999;
 }
 .personal-form {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     z-index: 9999;
 }
 /* MOBILE SCREEN */
@@ -41,7 +41,6 @@
     font-style: italic;
 }
 .car-details {
-    background-color: rgb(252, 255, 228);
     padding: 23px 0px;
     display: flex;
     flex-direction: column;
@@ -70,41 +69,100 @@
 .reserve-info > span {
     font-size: 1.1rem;
 }
-/* 
 
-
+/* FILLING FORM */
 .filling-form {
-    margin-bottom: 50px;
-    color: var(--secondary-text);
+    margin-top: 53px;
+    text-align: center;
 }
-.personal-container {
-    font-size: 1.4rem;
-    margin-bottom: 30px;
-    border-top: 3px solid var(--highlight);
+.filling-form > h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
-.personal-names, .personal-digit, .personal-live {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+.filling-form p {
+    padding-bottom: 0.5rem;
 }
-.container input {
+
+.personal-name, .personal-surname, .personal-email, .personal-phone, .personal-age, .personal-address, .personal-address, .personal-city, .personal-post {
+    grid-column: 1 / 9;
+    margin: 13px 0px 0px 0px;
+}
+
+.personal-btn {
+    margin-top: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.personal-btn > button {
     width: 100%;
+    max-width: 193px;
+}
+.personal-container p {
+    text-align: left;
+}
+.personal-container input {
+    width: min(100%, 400px);
     padding: 13px;
     margin-top: 10px;
     border: none;
     outline: none;
     background-color: var(--bg-white);
-    font-size: 17px;
     color: var(--secondary-text);
 } 
-.personal-names, .personal-digit, .personal-live, .personal-address, .personal-email {
-    margin-top: 20px;
-}
 .star-sym {
     color: var(--pink);
 }
 
-.personal-btn {
-    padding: 17px;
-    width: 100%;
-} */
+@media (min-width: 620px) {
+
+    .complete-it > h1 {
+        font-size: 1.7rem;
+    }
+    .complete-it button {
+        padding: 11px 27px;
+    }
+
+    .car-details {
+        padding: 23px 0px;
+        display: block;
+    }
+    .choosen-vehicle {
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+    
+    .choosen-info {
+        text-align: normal;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 41px;
+    }
+     .reserve-info > p {
+        margin-bottom: 11px;
+        font-size: 1.5rem;
+    }
+    .reserve-info > span {
+        font-size: 1.3rem;
+    } 
+    .filling-form {
+        text-align: left;
+    }
+    .filling-form > h2 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .complete-it > h1 {
+        font-size: 2rem;
+    }
+
+    .personal-name, .personal-surname, .personal-email, .personal-phone, .personal-age, .personal-address, .personal-address, .personal-city, .personal-post {
+        grid-column: span 4;
+        margin: 13px 0px 0px 0px;
+    }
+}

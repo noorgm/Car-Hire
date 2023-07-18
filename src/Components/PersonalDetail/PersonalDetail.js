@@ -75,20 +75,18 @@ const PersonalDetail = ({ carType, pickupLocation, dropoffLocation, pickupDateTi
 
         {/* Form Filling Section Starts Here */}
         <div className='filling-form'>     
-          <h1>Personal Details Form</h1>
-          <div className="personal-container">      
-            {errors && <h1 className="required-message">* All fields are required to be provided!</h1>}
-            <div className="personal-names">
-              <div className='personal-name'>
-                <p>Name <span className='star-sym'>*</span></p>
-                <input className='personal-input' type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='Enter Your First Name' />
-                {errors.name && <span>{errors.name}</span>}
-              </div>
-              <div className='personal-surname'>
-                <p>Surname <span className='star-sym'>*</span></p>
-                <input className='personal-input' type="text" value={surname} onChange={(e) => setSurname(e.target.value)} placeholder='Enter Your Sur-Name'/>
-                {errors.surname && <span>{errors.surname}</span>}
-              </div>
+          <h2>Personal Details Form</h2>
+          {errors && <h1 className="required-message">* All fields are required to be provided!</h1>}
+          <div className="personal-container grid"> 
+            <div className='personal-name'>
+              <p>Name <span className='star-sym'>*</span></p>
+              <input className='personal-input' type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='Enter Your First Name' />
+              {errors.name && <span>{errors.name}</span>}
+            </div>
+            <div className='personal-surname'>
+              <p>Surname <span className='star-sym'>*</span></p>
+              <input className='personal-input' type="text" value={surname} onChange={(e) => setSurname(e.target.value)} placeholder='Enter Your Sur-Name'/>
+              {errors.surname && <span>{errors.surname}</span>}
             </div>
 
             <div className='personal-email'>
@@ -97,17 +95,15 @@ const PersonalDetail = ({ carType, pickupLocation, dropoffLocation, pickupDateTi
               {errors.email && <span>{errors.email}</span>}
             </div>
 
-            <div className="personal-digit">
-              <div className='personal-phone'>
-                <p>Phone Number <span className='star-sym'>*</span></p>
-                <input className='personal-input' type="tel" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} placeholder='Enter Your Phone Number' />
-                {errors.phoneNumber && <span>{errors.phoneNumber}</span>}
-              </div>
-              <div className='personal-age'>
-                <p>Age <span className='star-sym'>*</span> </p>
-                <input className='personal-input' type="tel" value={age} onChange={(e) => setAge(e.target.value)} placeholder='Enter Your Age' />
-                {errors.age && <span>{errors.age}</span>}
-              </div>
+            <div className='personal-phone'>
+              <p>Phone Number <span className='star-sym'>*</span></p>
+              <input className='personal-input' type="tel" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} placeholder='Enter Your Phone Number' />
+              {errors.phoneNumber && <span>{errors.phoneNumber}</span>}
+            </div>
+            <div className='personal-age'>
+              <p>Age <span className='star-sym'>*</span> </p>
+              <input className='personal-input' type="tel" value={age} onChange={(e) => setAge(e.target.value)} placeholder='Enter Your Age' />
+              {errors.age && <span>{errors.age}</span>}
             </div>
 
             <div className='personal-address'>
@@ -116,23 +112,23 @@ const PersonalDetail = ({ carType, pickupLocation, dropoffLocation, pickupDateTi
               {errors.address && <span>{errors.address}</span>}
             </div>
 
-            <div className="personal-live">
-              <div className='personal-city'>
-                <p>City <span className='star-sym'>*</span> </p>
-                <input className='personal-input' type="text" value={city} onChange={(e) => setCity(e.target.value)} placeholder='Enter Your City Name' />
-                {errors.city && <span>{errors.city}</span>}
-              </div>
-              <div className='personal-zip'>
-                <p>Post Code <span className='star-sym'>*</span> </p>
-                <input className='personal-input' type="text" value={postCode} onChange={(e) => setPostCode(e.target.value)} placeholder='Enter Your Post Code' />
-                {errors.postCode && <span>{errors.postCode}</span>}
-              </div>
-            </div>        
+            <div className='personal-city'>
+              <p>City <span className='star-sym'>*</span> </p>
+              <input className='personal-input' type="text" value={city} onChange={(e) => setCity(e.target.value)} placeholder='Enter Your City Name' />
+              {errors.city && <span>{errors.city}</span>}
+            </div>
+            <div className='personal-post'>
+              <p>Post Code <span className='star-sym'>*</span> </p>
+              <input className='personal-input' type="text" value={postCode} onChange={(e) => setPostCode(e.target.value)} placeholder='Enter Your Post Code' />
+              {errors.postCode && <span>{errors.postCode}</span>}
+            </div>
+
           </div>
         </div>
 
-        <button className='personal-btn' type="submit">Reserve Now</button>
-        {/* {confirmationMessage && <div className="confirmation-message">{confirmationMessage}</div>} */}
+        <div className="personal-btn">
+          <button className='personal-btn' type="submit">Reserve Now</button>
+        </div>       
 
       </form>
     </main>
