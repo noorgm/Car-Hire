@@ -25,6 +25,9 @@
 .top-review img {
     width: min(80%, 150px);
 }
+.p-hover:hover {
+    color: var(--pink);
+}
 /* The Second Part */
 .carousel-root { 
     display: none;

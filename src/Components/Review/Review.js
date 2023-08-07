@@ -28,17 +28,17 @@ const Review = () => {
         <div className="rev-logo">
           <img src={trust} alt="trustpilot" />
           <span><StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon /></span>                        
-          <a href='https://uk.trustpilot.com/' rel="noopener noreferrer" target='_blank' ><p>(341+review)</p></a>
+          <a href='https://uk.trustpilot.com/' rel="noopener noreferrer" target='_blank' ><p className='p-hover'>(341+review)</p></a>
         </div>
         <div className="rev-logo">
           <img src={google} alt="google" />
           <span><StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon /></span>
-          <a href='https://www.google.co.uk/' rel="noopener noreferrer" target='_blank' ><p>(341+review)</p></a>
+          <a href='https://www.google.co.uk/' rel="noopener noreferrer" target='_blank' ><p className='p-hover'>(341+review)</p></a>
         </div>
         <div className="rev-logo">
           <img src={glass} alt="glassdoor" />
           <span><StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon /></span>                        
-          <a href='https://www.glassdoor.co.uk/' rel="noopener noreferrer" target='_blank' ><p>(341+review)</p></a>
+          <a href='https://www.glassdoor.co.uk/' rel="noopener noreferrer" target='_blank' ><p className='p-hover'>(341+review)</p></a>
         </div>
       </div>
 
