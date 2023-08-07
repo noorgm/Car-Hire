@@ -1,7 +1,7 @@
 .contact {
     grid-area: content;    
-    margin-top: 7px;
-    padding: 33px 0px;
+    margin-top: 3rem;
+    /* padding: 33px 0px; */
 }
 
 /* MOBILE SCREEN */
@@ -121,6 +121,10 @@
     margin-top: 37px;
     font-size: clamp(1.3rem, 1.3rem + 2vw , 2.7rem);
     font-weight: 800;
+}
+
+@media (min-width: 500px) {
+
 }
 
 @media (min-width: 1000px) {

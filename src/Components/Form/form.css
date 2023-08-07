@@ -80,47 +80,21 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .ReactModal__Content {
+.ReactModal__Content {
     width: 100%;
-    max-width: 57vw;
-    margin: 0 auto;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
 }
-
+@media (min-width: 900px) {
+    .ReactModal__Content {
+        max-width: 65vw;
+    }
+}
 .ReactModalPortal {
     z-index: 3;
 }
 .ReactModal__Overlay {
     z-index: 3;
-}  */
+} 

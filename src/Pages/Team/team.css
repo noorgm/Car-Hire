@@ -1,7 +1,7 @@
 .team-bg {
     grid-area: content;
-    margin-top: 7px;
-    padding: 33px 0px;
+    /* margin-top: 3rem; */
+    padding: 3rem 0rem;
 }
 
 /* MOBILE SCREEN */

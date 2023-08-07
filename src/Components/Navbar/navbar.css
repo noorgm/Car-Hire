@@ -1,9 +1,119 @@
 nav {
     grid-area: navbar;
+    padding: 1rem 0px;
+    align-items: center;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    min-height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* MOBILE SCREEN */
+.nav-logo {
+    grid-column: 1 / 3;
+}
+.nav-logo img {
+    width: 90%;
+    max-width: 101px;
+}
+.nav-ul > a {
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.nav-ul > a:hover {
+    color: var(--primary-color);
+}
+.nav-ul {
+    display: none;
+}
+
+/* MenuIcon */
+.menu-icon {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 8 / 9;
+    cursor: pointer;
+    transform: scale(1.3);
+}
+.nav-ul.active {
+    position: fixed;
+    top: 61px;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* row-gap: 33px; */
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    /* padding-top: 73px; */
+}
+.menu-icon.active .MuiSvgIcon-root {
+    display: none;
+}
+.menu-icon.active::before {
+    content: 'X';
+    font-size: 1.4rem;
+    display: block;
+}
+
+
+@media (min-width: 960px) {
+    
+    .menu-icon {
+        display: none;
+    }
+    .nav-logo {
+        grid-column: 1 / 3;
+    }
+    .nav-ul {
+        display: block;
+        z-index: 9999;
+    }
+    .nav-ul {
+        grid-column: 4 / 9;
+        column-gap: 31px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .nav-ul {
+        grid-column: 4 / 9;
+        font-size: 1.3rem;
+        gap: 4rem;
+    }
+    .nav-contact > button {
+        width: 100%;
+        height: 100%;
+    }
+}
+/* nav {
+    grid-area: navbar;
     margin-top: 27px;
 }
 
-/* MOBILE SCREEN */
+MOBILE SCREEN
 .nav-logo {
     grid-column: 1 / 4;
     grid-row: 1;
@@ -24,7 +134,7 @@ nav button {
     width: min(80%, 170px);
 }
 
-/* MenuIcon */
+MenuIcon
 .menu-icon {
     display: block;
     grid-column: 8 / 9;
@@ -106,5 +216,8 @@ nav button {
         height: 100%;
     }
 }
+
+   */
+
 
   

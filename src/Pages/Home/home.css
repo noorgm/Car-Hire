@@ -1,5 +1,6 @@
 .home {
     grid-area: content;
+    margin-top: 4.5rem;
 }
 
 /* MOBILE SCREEN */
@@ -54,6 +55,9 @@
 
 /* MD SCREEN */
 @media (min-width: 960px) {
+    .home {
+        margin-top: 7rem;
+    }
     .home-main {
         margin-top: 73px;
     }
@@ -94,7 +98,7 @@
         display: flex;
         position: absolute;
         right: 0;
-        top: 0;
+        top: 75px;
         width: max(55%, 800px);
         z-index: 0;
     }    
@@ -109,12 +113,7 @@
 
 @media (min-width: 1350px) {
     .home-right {
-        display: flex;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: max(64%, 800px);
-        z-index: 0;
+        max-width: 971px;
     } 
 }
 
